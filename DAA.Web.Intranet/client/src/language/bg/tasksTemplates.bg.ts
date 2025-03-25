@@ -1,0 +1,16 @@
+export default {
+    addTemplate: 'Добави шаблон',
+    createTitle: 'Нов шаблон',
+    deleteConfirmMessage: 'Изтриване на шаблон "{0}"',
+    description: 'Описание',
+    file: 'Документ',
+    mainTitle: 'Шаблони за задачи',
+    noTemplates: 'Няма добавени шаблони',
+    notRequired: 'Не задължително',
+    process: 'Процес',
+    processSteps: 'Стъпка в процес',
+    relatedContentUrl: 'Url за връзка към съдържанието',
+    required: 'Задължително',
+    title: 'Наименование',
+    updateTitle: 'Промяна на шаблон',
+}

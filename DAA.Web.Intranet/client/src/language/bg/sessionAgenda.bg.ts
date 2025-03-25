@@ -1,0 +1,30 @@
+export default {
+    decision: 'Решение',
+    columns: {
+        actions: 'Действия',
+		createdBy: 'Създадено от',
+        createdOn: 'Създадено на',
+        deadlineForApproval: 'Срок за ...',
+        decision: 'Решение',
+        deleted: 'Изтрито',
+        deletedOn: 'Изтрито на',
+        deletedBy: 'Изтрито от',
+        process: 'Процес',
+        report: 'Доклад',
+        reportCreatedBy: 'Изготвен от',
+        reportContent: 'Съдържание',
+        reportNumber: 'Доклад №',
+        standpoint: 'Становище',
+        standpoints: 'Становища',
+        updatedOn: 'Променено на',
+        updatedBy: 'Променено от',
+    },
+	buttons: {
+        setDecision: 'Решение по точка от дневен ред',
+        commitStandpoint: 'Завърши промени',
+        commitStandpointTooltip: 'Завърши нанесените промени',
+		sendForStandpoints: 'Изпрати за становища',
+        displaySessionAgendaItem: 'Преглед на точка от дневен ред',
+        editSessionAgenda: 'Редакция на становище',
+	}
+}

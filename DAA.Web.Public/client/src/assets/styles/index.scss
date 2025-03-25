@@ -1,0 +1,210 @@
+@use '@/assets/styles/common.scss' as *;
+
+@mixin table($color: var(--ISDA-main-color1)) {
+    @include side-margin();
+    border: 1px solid $color;
+}
+
+@mixin text-left($color: var(--ISDA-main-color2)) {
+    position: relative;
+    background-color: $color !important;
+}
+
+@mixin float-right {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+@mixin sort($color: var(--ISDA-main-color1)) {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    color: $color;
+}
+
+@mixin filter-button($color: var(--ISDA-main-color1), $background: var(--ISDA-main-color2)) {
+    background-color: $background !important;
+    border: none;
+    box-shadow: none;
+    color: $color !important;
+}
+
+@mixin table-header-text {
+    display: block;
+    margin: 15px 30px 5px 0px;
+    top: 5px;
+}
+
+@mixin pager-page-link($color: var(--ISDA-main-color1)) {
+    color: $color;
+}
+
+@mixin active-a($color: var(--ISDA-main-color1), $background: var(--ISDA-main-color4)) {
+    color: $color !important;
+    background-color: $background !important;
+    border-color: $background !important;
+}
+
+:deep(.loader) {
+    @include loader();
+}
+
+:deep(h3) {
+    @include side-margin(100px);
+    @include title();
+    margin-top: 50px;
+    // text-align: center !important;
+    // margin-bottom: 30px;
+    // margin-top: 30px;
+    // background-color: var(--ISDA-main-color2);
+    // padding: 10px 30px;
+    // border-radius: 6px;
+    // box-shadow: gray 0px 1px 3px 0px;
+    // text-transform: uppercase;
+}
+
+// :deep(.py-3) {
+//     padding-left: 0px;
+//     padding-right: 0px;
+// }
+:deep(.py-3:nth-of-type(2)) {
+    padding-right: 30px;
+}
+:deep(div:has(.py-3)) {
+    @include side-margin();
+}
+
+:deep(.col-md-12 > div:nth-of-type(2)) {
+    @include side-margin();
+    margin-top: 20px;
+}
+
+:deep(.col-md-12 > div:first-of-type) {
+    @include table();
+    overflow-y: hidden;
+    min-height: 250px;
+}
+
+:deep(button),
+:deep(.input-group) {
+    @include button();
+}
+
+:deep(.text-left) {
+    @include text-left();
+}
+
+:deep(.float-right) {
+    @include float-right();
+}
+
+:deep(.fa-sort) {
+    @include sort();
+    z-index: 2;
+}
+
+:deep(.fa-sort-up),
+:deep(.fa-sort-down) {
+    @include sort($color: var(--ISDA-main-color4));
+}
+
+:deep(.float-right button) {
+    @include filter-button();
+}
+
+:deep(div.d-flex a) {
+    @include table-header-text();
+}
+
+:deep(.page-link) {
+    @include pager-page-link();
+}
+
+:deep(.active a) {
+    @include active-a($color: white);
+    z-index: 2;
+}
+
+:deep(.text-left.active a) {
+    @include active-a($color: var(--ISDA-main-color4), $background: var(--ISDA-main-color2));
+}
+
+:deep(.col-md-5) {
+    padding: 0.5px 1px !important;
+}
+
+:deep(.col-md-5 > select) {
+    padding: 5px 20px !important;
+    margin: 2px !important;
+}
+
+:deep(.align-items-baseline) {
+    height: 40px !important;
+    padding-right: 15px;
+    border-radius: 6px;
+    box-shadow: gray 0px 1px 3px 0px;
+}
+
+// :deep(.mx-3) {
+//     @include active-a($color: var(--ISDA-main-color1), $background: var(--ISDA-main-color4));
+// }
+
+:deep(.mx-3),
+:deep(#btnExportGrid),
+:deep(div:has( > .form-control)),
+:deep(div:has( > .form-control) > .btn) {
+    box-shadow: none !important;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+
+:deep(#btnExportGrid) {
+    color: var(--ISDA-main-color1) !important;
+}
+
+:deep(div:has( > .form-control) > .btn) {
+    background-color: var(--ISDA-main-color4);
+}
+
+:deep(div:has( > .form-control)) {
+    border: none ;
+}
+
+:deep(.v-list--nav .v-list-item--active),
+:deep(.v-list-item:hover) {
+    color: var(--ISDA-main-color4) !important;
+}
+
+:deep(.form-select) {
+    border: none;
+}
+
+// :deep(#btnExportGrid) {
+//     background-color: white;
+// }
+
+:deep(.table-responsive) {
+    position: relative !important;
+    max-height: 600px;
+    overflow-y: auto !important;
+    overflow-x: auto !important;
+}
+
+:deep(.table-responsive), :deep(div>div:has(.table)) {
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+:deep(thead) {
+    position: sticky !important;
+    position: -webkit-sticky !important;
+    top: 0px !important;
+    z-index: 2;
+}
+
+:deep(td),
+:deep(tr) {
+    border-color: rgb(154, 154, 154) !important;
+}
+

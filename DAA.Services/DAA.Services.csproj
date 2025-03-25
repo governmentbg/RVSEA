@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Identity\**" />
+    <EmbeddedResource Remove="Identity\**" />
+    <None Remove="Identity\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Authentication\ClaimsTransformationService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="27.2.1" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.20.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="6.0.5" />
+    <PackageReference Include="Polybioz.HtmlRenderer.PdfSharp.Core" Version="1.0.0" />
+    <PackageReference Include="SimpleImpersonation" Version="4.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DAA.Data\DAA.Data.csproj" />
+    <ProjectReference Include="..\DAA.Extensions\DAA.Extensions.csproj" />
+    <ProjectReference Include="..\DAA.FileUtils\DAA.FileUtils.csproj" />
+    <ProjectReference Include="..\DAA.Models\DAA.Models.csproj" />
+    <ProjectReference Include="..\DAA.Shared\DAA.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

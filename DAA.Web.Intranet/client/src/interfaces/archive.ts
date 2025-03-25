@@ -1,0 +1,21 @@
+export interface IArchive {
+    id?: number,
+    name: string,
+    code?: number,
+    sortOrder?: number,
+    externalIdentifier?: number,
+    hasExternalSource?: boolean,
+    createdOn?: Date,
+    deletedOn?: Date,
+    updatedOn?: Date,
+    createdBy?: string,
+    deletedBy?: string,
+    updatedBy?: string;
+    deleted?: boolean,
+    createdByUserName?: string,
+    createdByDisplayName?: string,
+    updatedByUserName?: string,
+    updatedByDisplayName?: string,
+    deletedByUserName?: string,
+    deletedByDisplayName?: string,
+}

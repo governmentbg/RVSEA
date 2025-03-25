@@ -1,0 +1,744 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EmailConfirmation_Body" xml:space="preserve">
+    <value>Потвърдете вашият акаунт като щракнете върху връзката &lt;a href="{0}"&gt;тук&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;&lt;i&gt;Това потвърждение ще бъде валидно в рамките на {1} часа.&lt;/i&gt;</value>
+  </data>
+  <data name="EmailConfirmation_Subject" xml:space="preserve">
+    <value>Потвърждаване на регистриран потребител</value>
+  </data>
+  <data name="Error_500" xml:space="preserve">
+    <value>Възникна грешка на сървъра.</value>
+  </data>
+  <data name="Error_AccountNotConfirmed" xml:space="preserve">
+    <value>Възникна грешка. Потвърждението на регистрацията е неуспешно.</value>
+  </data>
+  <data name="Error_ArchiveDoesNotExists" xml:space="preserve">
+    <value>Архив {0} не съществува</value>
+  </data>
+  <data name="Error_CannotCompleteAction" xml:space="preserve">
+    <value>Действието не може да бъде изпълнено</value>
+  </data>
+  <data name="Error_ConfirmationMailNotSent" xml:space="preserve">
+    <value>Възникна грешка. Изпращането на съобщение за потвърждение на регистрацията е неуспешно.</value>
+  </data>
+  <data name="Error_DuplicateNomenclatureValueCode" xml:space="preserve">
+    <value>Стойност с код {0} вече съществува.</value>
+  </data>
+  <data name="Error_EmailMismatch" xml:space="preserve">
+    <value>Електронната поща и потвърждението на електронната поща не са еднакви!</value>
+  </data>
+  <data name="Error_EmailNotConfirmed" xml:space="preserve">
+    <value>Електронната поща на потребителя не е потвърдена</value>
+  </data>
+  <data name="Error_ExecutingAction" xml:space="preserve">
+    <value>Грешка при изпълнение на операцията</value>
+  </data>
+  <data name="Error_FileContentEmpty" xml:space="preserve">
+    <value>Съдържанието на файл {0} е празно.</value>
+  </data>
+  <data name="Error_InvalidPassword" xml:space="preserve">
+    <value>Невалидна парола.</value>
+  </data>
+  <data name="Error_InvalidUserName" xml:space="preserve">
+    <value>Грешно потребителско име {0}</value>
+  </data>
+  <data name="Error_InvalidUserOrPass" xml:space="preserve">
+    <value>Невалидна ел. поща и/или парола</value>
+  </data>
+  <data name="Error_PasswordMismatch" xml:space="preserve">
+    <value>Паролата и потвърждението на паролата не са еднакви!</value>
+  </data>
+  <data name="Error_PasswordRequiresDigit" xml:space="preserve">
+    <value>Паролата трябва да съдържа поне една цифра [0-9]</value>
+  </data>
+  <data name="Error_PasswordRequiresLower" xml:space="preserve">
+    <value>Паролата трябва да съдържа поне една малка буква [a-z]</value>
+  </data>
+  <data name="Error_PasswordRequiresNonAlphanumeric" xml:space="preserve">
+    <value>Паролата трябва да съдържа поне един небуквено-цифров символ</value>
+  </data>
+  <data name="Error_PasswordRequiresUniqueChars" xml:space="preserve">
+    <value>Паролата трябва да съдържа поне {0} уникални символа</value>
+  </data>
+  <data name="Error_PasswordRequiresUpper" xml:space="preserve">
+    <value>Паролата трябва да съдържа поне една главна буква [A-Z]</value>
+  </data>
+  <data name="Error_PasswordResetMailNotSent" xml:space="preserve">
+    <value>Възникна грешка. Изпращането на съобщение за забравена парола е неуспешно.</value>
+  </data>
+  <data name="Error_PasswordTokenExpired" xml:space="preserve">
+    <value>Валидноста на връзката за генериране на парола е изтекла</value>
+  </data>
+  <data name="Error_PasswordTooShort" xml:space="preserve">
+    <value>Парола трябва съдържа поне {0} символа</value>
+  </data>
+  <data name="Error_RegistrationNotConfirmed" xml:space="preserve">
+    <value>Регистрацията на потребителя не е потвърдена</value>
+  </data>
+  <data name="Error_RoleDoesNotExists" xml:space="preserve">
+    <value>Роля {0} не съществува</value>
+  </data>
+  <data name="Error_RoleExists" xml:space="preserve">
+    <value>Роля {0} вече съществува</value>
+  </data>
+  <data name="Error_RoleNotFound" xml:space="preserve">
+    <value>Роля {0} не може да бъде намерена.</value>
+  </data>
+  <data name="Error_RoleWithIdNotFound" xml:space="preserve">
+    <value>Роля с ИД {0} не може да бъде намерена.</value>
+  </data>
+  <data name="Error_StoreNotIUserRoleStore" xml:space="preserve">
+    <value>Хранилището не е IUserRoleStore</value>
+  </data>
+  <data name="Error_UserAccessDenied" xml:space="preserve">
+    <value>Потребителят {0} няма право за достъп до този ресурс</value>
+  </data>
+  <data name="Error_UserAlreadyInRole" xml:space="preserve">
+    <value>Потребителят вече е добавен към роля {0}</value>
+  </data>
+  <data name="Error_UserDoesNotExists" xml:space="preserve">
+    <value>Потребител {0} не съществува</value>
+  </data>
+  <data name="Error_UserExists" xml:space="preserve">
+    <value>Потребител {0} вече съществува</value>
+  </data>
+  <data name="Error_UserIsDeleted" xml:space="preserve">
+    <value>Потребител {0} е изтрит.</value>
+  </data>
+  <data name="Error_UserNotInRole" xml:space="preserve">
+    <value>Потребителят не е добавен към роля {0}</value>
+  </data>
+  <data name="Error_UserProfileDoesNotExists" xml:space="preserve">
+    <value>Потребителският профил не съществува</value>
+  </data>
+  <data name="Error_ValueCannotBeNullOrEmpty" xml:space="preserve">
+    <value>Стойността не може да бъде NULL или празна</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Парола</value>
+  </data>
+  <data name="PasswordReset_Body" xml:space="preserve">
+    <value>Въведете нова парола след като щракнете върху връзката &lt;a href="{0}"&gt;тук&lt;/a&gt;. &lt;br/&gt;&lt;br/&gt;&lt;i&gt;Това съобщение ще бъде валидно в рамките на {1} часа.&lt;/i&gt;</value>
+  </data>
+  <data name="PasswordReset_Subject" xml:space="preserve">
+    <value>Забравена парола</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Потребителско име</value>
+  </data>
+  <data name="Role_G1" xml:space="preserve">
+    <value>Служител от група Г1 (G1)</value>
+  </data>
+  <data name="Role_D1" xml:space="preserve">
+    <value>Служител от група Д1 (D1)</value>
+  </data>
+  <data name="Role_D2" xml:space="preserve">
+    <value>Служител от група Д2 (D2)</value>
+  </data>
+  <data name="Role_D3" xml:space="preserve">
+    <value>Служител от група Д3 (D3)</value>
+  </data>
+  <data name="Role_A" xml:space="preserve">
+    <value>Служител от група А (A)</value>
+  </data>
+  <data name="Role_B" xml:space="preserve">
+    <value>Служител от група Б (B)</value>
+  </data>
+  <data name="Role_V1" xml:space="preserve">
+    <value>Служител от група В1 (V1)</value>
+  </data>
+  <data name="Role_V2" xml:space="preserve">
+    <value>Служител от група В2 (V2)</value>
+  </data>
+  <data name="Role_V3" xml:space="preserve">
+    <value>Служител от група В3 (V3)</value>
+  </data>
+  <data name="Role_V4" xml:space="preserve">
+    <value>Служител от група В4 (V4)</value>
+  </data>
+  <data name="Role_V5" xml:space="preserve">
+    <value>Служител от група В5 (V5)</value>
+  </data>
+  <data name="Role_V6" xml:space="preserve">
+    <value>Служител от група В6 (V6)</value>
+  </data>
+  <data name="Role_G" xml:space="preserve">
+    <value>Служител от група Г (G)</value>
+  </data>
+  <data name="Role_G2" xml:space="preserve">
+    <value>Служител от група Г2 (G2)</value>
+  </data>
+  <data name="Role_E" xml:space="preserve">
+    <value>Служител от група Е (E)</value>
+  </data>
+  <data name="Role_J" xml:space="preserve">
+    <value>Служител от група Ж (J)</value>
+  </data>
+  <data name="Role_Z" xml:space="preserve">
+    <value>Служител от група З (Z)</value>
+  </data>
+  <data name="Role_I" xml:space="preserve">
+    <value>Служител от група И (I)</value>
+  </data>
+  <data name="Role_I1" xml:space="preserve">
+    <value>Служител от група И1 (I1)</value>
+  </data>
+  <data name="Error_CannotResetPasswordForUserType" xml:space="preserve">
+    <value>Паролата не може да бъде сменена. Потребителят не използва потребителско име и парола.</value>
+  </data>
+  <data name="Error_ProcedureNotFound" xml:space="preserve">
+    <value>Процедурата не беше намерена</value>
+  </data>
+  <data name="Error_InventoryNumberExists" xml:space="preserve">
+    <value>Инвентарният номер вече е използван!</value>
+  </data>
+  <data name="Error_DraftNotCurrent" xml:space="preserve">
+    <value>Версията на данните не е актуална {0}</value>
+  </data>
+  <data name="Error_DraftReadOnly" xml:space="preserve">
+    <value>Версията на данните е само за четене {0}</value>
+  </data>
+  <data name="Error_SystemIdentifierNullOrEmpty" xml:space="preserve">
+    <value>Липсва стойност за системен идентификатор</value>
+  </data>
+  <data name="MissingRequiredFilmPackageADocument" xml:space="preserve">
+    <value>Липсва поне един задължителен файл към пакет А!</value>
+  </data>
+  <data name="MissingRequiredFilmPackageBDocument" xml:space="preserve">
+    <value>Липсва поне един задължителен файл към пакет Б!</value>
+  </data>
+  <data name="Error_EntityAlreadyHasProcess" xml:space="preserve">
+    <value>За този обект или свързан към този обект вече има стартиран процес!</value>
+  </data>
+  <data name="Error_InvalidData" xml:space="preserve">
+    <value>Невалидни данни</value>
+  </data>
+  <data name="Error_ItemDoesNotExists" xml:space="preserve">
+    <value>Такъв обект не съществува!</value>
+  </data>
+  <data name="Error_SameStep" xml:space="preserve">
+    <value>Текущата стъпка е същата!</value>
+  </data>
+  <data name="Error_MissingTaskTemplate" xml:space="preserve">
+    <value>Липсва шаблон за задача за стъпка {0}!</value>
+  </data>
+  <data name="Error_MissingTaskAssignedUsers" xml:space="preserve">
+    <value>Липсват потребители за изпълнение на задача по стъпка {0} на обект {1}!</value>
+  </data>
+  <data name="InventoryNumber" xml:space="preserve">
+    <value>Инвентарен номер</value>
+  </data>
+  <data name="Error_CannotCancelTask" xml:space="preserve">
+    <value>Задачата не може да бъде отменена!</value>
+  </data>
+  <data name="Error_CannotCompleteTask" xml:space="preserve">
+    <value>Задачата не може да бъде завършена!</value>
+  </data>
+  <data name="Fund_NumberArrayNoIndex" xml:space="preserve">
+    <value>Без индекс</value>
+  </data>
+  <data name="Error_CannotCompleteProcess" xml:space="preserve">
+    <value>Процесът не може да бъде завършен</value>
+  </data>
+  <data name="Error_ProcessHasActiveStep" xml:space="preserve">
+    <value>Процесът има активна стъпка {0}</value>
+  </data>
+  <data name="Error_FundAvailabilityReport" xml:space="preserve">
+    <value>Грешка при взимането на справка "Фондова наличност"</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Не</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="Error_SpecialRegistrationListReport" xml:space="preserve">
+    <value>Грешка при вземането на справка "Списък за специална регистрация"</value>
+  </data>
+  <data name="Error_ItemNeededForTaskDoesNotExists" xml:space="preserve">
+    <value>Не е намерен обект, необходим за създаването на задача!</value>
+  </data>
+  <data name="Error_CreatingDraft" xml:space="preserve">
+    <value>Грешка при създаване на чернова!</value>
+  </data>
+  <data name="Error_DocumentUsedInCard" xml:space="preserve">
+    <value>Този документ се използва в картон!</value>
+  </data>
+  <data name="Error_CardDocumentAlreadyUsed" xml:space="preserve">
+    <value>Избрали сте документ, който вече е използван в друг картон!</value>
+  </data>
+  <data name="Error_InvalidProcessStepType" xml:space="preserve">
+    <value>Невалидна стъпка {0} в процес {1}</value>
+  </data>
+  <data name="Error_InvalidProcessType" xml:space="preserve">
+    <value>Невалиден процес {0}</value>
+  </data>
+  <data name="Error_ProcessAlreadyCompleted" xml:space="preserve">
+    <value>Процесът {0} е вече завършен</value>
+  </data>
+  <data name="Error_ItemHasActiveProcess" xml:space="preserve">
+    <value>Върху този запис има стартиран процес!</value>
+  </data>
+  <data name="Error_LibraryCardInvalid" xml:space="preserve">
+    <value>Невалидна читателска карта</value>
+  </data>
+  <data name="Error_SessionAgendaItemDoesNotExists" xml:space="preserve">
+    <value>Няма създадена точка от дневен ред на заседание</value>
+  </data>
+  <data name="Error_FundNotFound" xml:space="preserve">
+    <value>Не е намерен фонд!</value>
+  </data>
+  <data name="Error_RawInventoriesNotSelected" xml:space="preserve">
+    <value>Не са избрани груби описи за обработка в този процес!</value>
+  </data>
+  <data name="Error_NumberIsAlreadyUsed" xml:space="preserve">
+    <value>Номерът вече е зает {0}</value>
+  </data>
+  <data name="Error_FundHasNoUnprocessedRawInventories" xml:space="preserve">
+    <value>В този фонд няма необработени груби описи!</value>
+  </data>
+  <data name="Error_ReportDoesNotExists" xml:space="preserve">
+    <value>Доклад за процес {0} не съществува</value>
+  </data>
+  <data name="Error_FileNotFound" xml:space="preserve">
+    <value>Файлът не може да бъде намерен</value>
+  </data>
+  <data name="Error_UserCannotExecuteAction" xml:space="preserve">
+    <value>Потребителят няма необходимите права да изпълни това действие</value>
+  </data>
+  <data name="Error_MissingFileUploaderPathOrFileName" xml:space="preserve">
+    <value>Липсва конфигуриран път или файл за теглене!</value>
+  </data>
+  <data name="Error_MissingFileUploaderFile" xml:space="preserve">
+    <value>Не е открит файл за сваляне!</value>
+  </data>
+  <data name="Error_FileUploaderFileNull" xml:space="preserve">
+    <value>Липсва файл за сваляне!</value>
+  </data>
+  <data name="Error_ProcessStepNotActive" xml:space="preserve">
+    <value>Стъпката {0} в процеса не е активна.</value>
+  </data>
+  <data name="MissingTaskStepAndNotificationType" xml:space="preserve">
+    <value>Липсва стъпка от процес или тип известие за задача!</value>
+  </data>
+  <data name="Error_NoApplicationFound" xml:space="preserve">
+    <value>Не е намерено посоченото заявление!</value>
+  </data>
+  <data name="Error_AvailablePackageFilesForAE" xml:space="preserve">
+    <value>Не сте включили всички файлове от пакет Б в архивни единици!</value>
+  </data>
+  <data name="NoSessionAgendaItemDecisions" xml:space="preserve">
+    <value>Няма решения по всички точки от дневния ред</value>
+  </data>
+  <data name="Error_MissingFileType" xml:space="preserve">
+    <value>Файлов формат '{0}' липсва в номенклатурата!</value>
+  </data>
+  <data name="Error_NoInventoryForApplication" xml:space="preserve">
+    <value>Не е открит опис, в който да е включено заявление {0}!</value>
+  </data>
+  <data name="Error_NoDocsForInventoryPackage" xml:space="preserve">
+    <value>Не са намерени документите към пакет на опис!</value>
+  </data>
+  <data name="Error_NoActiveProcess" xml:space="preserve">
+    <value>Няма стартиран процес!</value>
+  </data>
+  <data name="Error_ItemOrDraftDoesNotExist" xml:space="preserve">
+    <value>Няма такъв обект или активна чернова!</value>
+  </data>
+  <data name="Error_GetMostUsedRequestEntitiesReport" xml:space="preserve">
+    <value>Грешка в извличане на Най-често използвани архивни фондове, описи, архивни единици</value>
+  </data>
+  <data name="Error_NoEditStep" xml:space="preserve">
+    <value>Стъпката от процеса не позволява редакция!</value>
+  </data>
+  <data name="Error_InvalidEntityType" xml:space="preserve">
+    <value>Невалиден тип обект!</value>
+  </data>
+  <data name="Error_MissingApplication" xml:space="preserve">
+    <value>Не е посочен номер на заявление!</value>
+  </data>
+  <data name="Error_TaskAlreadyCanceled" xml:space="preserve">
+    <value>Задачата е отменена.</value>
+  </data>
+  <data name="Error_TaskAlreadyCompleted" xml:space="preserve">
+    <value>Задачата е вече завършена.</value>
+  </data>
+  <data name="Error_AntivirusCheckResult" xml:space="preserve">
+    <value>Файлът не е валиден според антивирусната проверка! ({0})</value>
+  </data>
+  <data name="Error_ChecksumCheckResult" xml:space="preserve">
+    <value>Файлът не е валиден според проверката за чексума! ({0})</value>
+  </data>
+  <data name="Error_FileFormatCheckResult" xml:space="preserve">
+    <value>Файлът {0} не е валиден според проверката за файлов формат! ({1})</value>
+  </data>
+  <data name="Error_FileNameExists" xml:space="preserve">
+    <value>Вече има качен файл с това име!</value>
+  </data>
+  <data name="Error_UnsupportedFileType" xml:space="preserve">
+    <value>Неподдържан файлов формат ({0})! Моля обърнете се към администратор на системата за добавяне на този файлов формат!</value>
+  </data>
+  <data name="Error_MissingOrEmptyFile" xml:space="preserve">
+    <value>Липсващ или празен файл!</value>
+  </data>
+  <data name="Error_GetActiveProcessesReport" xml:space="preserve">
+    <value>Грешка в извличане на справка Активни процеси</value>
+  </data>
+  <data name="Error_MissingInventoryNumber" xml:space="preserve">
+    <value>Липсва номер на инвентарен опис!</value>
+  </data>
+  <data name="Error_DigitalDocumentsUsageReport" xml:space="preserve">
+    <value>Грешка в извличане на справката "Използване на цифровизирани документи"</value>
+  </data>
+  <data name="ConfirmedEmail" xml:space="preserve">
+    <value>Този имейл вече е потвърден</value>
+  </data>
+  <data name="Error_CardForm1" xml:space="preserve">
+    <value>Грешка при взимането на Картон обр. 1</value>
+  </data>
+  <data name="ImportError_MissingSheet" xml:space="preserve">
+    <value>Липсва sheet {0}!</value>
+  </data>
+  <data name="InvalidImportArchivalEntityData" xml:space="preserve">
+    <value>Sheet {0}: Невалидни данни на архивна единица на ред {1}: {2}</value>
+  </data>
+  <data name="ArchivalEntitiesImportNoEntitiesFound" xml:space="preserve">
+    <value>Не са намерени данни за архивни единици!</value>
+  </data>
+  <data name="InvalidImportData" xml:space="preserve">
+    <value>Невалидни данни на ред {0}: {1}</value>
+  </data>
+  <data name="InvalidImportDocumentData" xml:space="preserve">
+    <value>Sheet {0}: Невалидни данни на документ на ред {1}: {2}</value>
+  </data>
+  <data name="InvalidImportPackageData" xml:space="preserve">
+    <value>Sheet {0}: Невалидни данни на файл от пакет Б на ред {1}: {2}</value>
+  </data>
+  <data name="Error_CreateNewTaskTemplate" xml:space="preserve">
+    <value>За тази стъпка има съществуваща връзка към шаблон, може да използвате опцията за редакция.</value>
+  </data>
+  <data name="Error_InventoryNotFound" xml:space="preserve">
+    <value>Sheet {0}: Не е намерен инвентарен опис {1}!</value>
+  </data>
+  <data name="Error_ArchivalEntityNotFound" xml:space="preserve">
+    <value>Не е намерена архивна единица {0}!</value>
+  </data>
+  <data name="System_External" xml:space="preserve">
+    <value>ИСДА</value>
+  </data>
+  <data name="System_Internal" xml:space="preserve">
+    <value>СЕА</value>
+  </data>
+  <data name="ImportError_NoMatchingArchivalEntity" xml:space="preserve">
+    <value>Sheet {0}: Не е намерена съответна архивна единица с номер {1} за документ на ред {2}.</value>
+  </data>
+  <data name="InvalidImportArchivalEntityDropDownValue" xml:space="preserve">
+    <value>Sheet {0}: Невалидни номенклатурни данни {1} на архивна единица на ред {2}</value>
+  </data>
+  <data name="InvalidImportDocumentDropDownValue" xml:space="preserve">
+    <value>Sheet {0}: Невалидни номенклатурни данни {1} на документ на ред {2}</value>
+  </data>
+  <data name="InvalidImportEndDate" xml:space="preserve">
+    <value>Sheet {0}: Невалидна крайна дата на ред {1}</value>
+  </data>
+  <data name="InvalidImportStartDate" xml:space="preserve">
+    <value>Sheet {0}: Невалидна начална дата на ред {1}</value>
+  </data>
+  <data name="ImportError_NoMatchingDocumentEntity" xml:space="preserve">
+    <value>Sheet {0}: Не е намерен съответен документ за файл на ред {1}</value>
+  </data>
+  <data name="Error_ImportPackageFilesNotFound" xml:space="preserve">
+    <value>Не са намерени следните файлове от пакет Б, които да не са включени в документ: {0}</value>
+  </data>
+  <data name="ImportError_FundNotFound" xml:space="preserve">
+    <value>Не е намерен фонд {0}</value>
+  </data>
+  <data name="Error_PasswordIsSame" xml:space="preserve">
+    <value>Новата парола трябва да бъде различна от старата</value>
+  </data>
+  <data name="Error_NoExternalConnection" xml:space="preserve">
+    <value>По технически причини няма връзка с ИСДА.</value>
+  </data>
+  <data name="Error_InvalidEntityStatus" xml:space="preserve">
+    <value>Елементът е отчислен или изтрит.</value>
+  </data>
+  <data name="Error_UnnumberedArchivalEntities" xml:space="preserve">
+    <value>Не всички архивни единици имат регистрирани номера</value>
+  </data>
+  <data name="Error_UnnumberedArchivalEntity" xml:space="preserve">
+    <value>Архивната единица няма регистриран номер</value>
+  </data>
+  <data name="Error_UnnumberedEntities" xml:space="preserve">
+    <value>Не всички описи и архивни единици имат регистрирани номера</value>
+  </data>
+  <data name="Error_UnnumberedFund" xml:space="preserve">
+    <value>Фондът няма регистриран номер</value>
+  </data>
+  <data name="Error_UnnumberedInventories" xml:space="preserve">
+    <value>Не всички описи имат регистрирани номера</value>
+  </data>
+  <data name="Error_UnnumberedInventory" xml:space="preserve">
+    <value>Описът няма регистриран номер</value>
+  </data>
+  <data name="DuplicatedAEImportNumber" xml:space="preserve">
+    <value>Sheet {0}: Дублиран номер {1} на архивна единица на ред {2}!</value>
+  </data>
+  <data name="CantGoNextStepWithDigObj" xml:space="preserve">
+    <value>Не може да преминете на стъпка „Контрол на качеството” без прикачени файлове.</value>
+  </data>
+  <data name="Role_B1" xml:space="preserve">
+    <value>Служител от група Б1 (B1)</value>
+  </data>
+  <data name="Error_InvalidFile" xml:space="preserve">
+    <value>Файл {0} не се валидира успешно!</value>
+  </data>
+  <data name="InventoryImportNotFound" xml:space="preserve">
+    <value>Не са намерени данни за опис!</value>
+  </data>
+  <data name="Error_InventoryNumberArrayDoesNotMatch" xml:space="preserve">
+    <value>Sheet {0}: Индекс {1} на описа от импортния файл не съвпада с индекса {2} на описа в системата!</value>
+  </data>
+  <data name="InvalidImportInventoryData" xml:space="preserve">
+    <value>Sheet {0}: Невалидни данни на опис: {1}</value>
+  </data>
+  <data name="InvalidImportInventoryDropDownValue" xml:space="preserve">
+    <value>Sheet {0}: Невалидни номенклатурни данни на опис: {1}</value>
+  </data>
+  <data name="ISDADataCannotBeDisplayedForbid" xml:space="preserve">
+    <value>Данните от ИСДА не могат да бъдат заредени, поради липса на връзка с нейната база данни.</value>
+  </data>
+  <data name="Error_WorkDoneOnDigitalObjectsReport" xml:space="preserve">
+    <value>Грешка при взимането на справка "Извършена работа по дигитални обекти"</value>
+  </data>
+  <data name="Error_ReportLoading" xml:space="preserve">
+    <value>Грешка при зареждане на справката</value>
+  </data>
+  <data name="Error_MissingPackageADocs" xml:space="preserve">
+    <value>Липсват прикачени файлове към задължителни документи от пакет A!</value>
+  </data>
+  <data name="Error_MissingPackageB" xml:space="preserve">
+    <value>Липсват прикачени файлове към пакет Б!</value>
+  </data>
+  <data name="Error_ApplicationActiveProcessNotFound" xml:space="preserve">
+    <value>Не е открит активен процес за заявлението!</value>
+  </data>
+  <data name="Error_ApplicationInventoryNotFound" xml:space="preserve">
+    <value>Не е открит опис, в който е включено заявлението!</value>
+  </data>
+  <data name="Error_MissingRequiredPackageADocs" xml:space="preserve">
+    <value>Липсват задължителни документи към пакет А!</value>
+  </data>
+  <data name="Error_CannotStartProcess" xml:space="preserve">
+    <value>Процесът не може да бъде стартиран. {0}</value>
+  </data>
+  <data name="Error_ExternalSourceDataOnly" xml:space="preserve">
+    <value>Това е запис от ИСДА. Няма данни за него или свързани с него записи в СЕА.</value>
+  </data>
+  <data name="Error_MissingDocumentFiles" xml:space="preserve">
+    <value>Към един или няколко документа липсват прикачени файлове.</value>
+  </data>
+  <data name="Error_ApplicationPackagesAlreadyExist" xml:space="preserve">
+    <value>Пакети А и Б към посоченото заявление вече съществуват.</value>
+  </data>
+  <data name="Error_CannotModifyInventoryApplication" xml:space="preserve">
+    <value>Заявлението към този опис не може да бъде променено!</value>
+  </data>
+  <data name="Error_CannotSendSignatureRequest" xml:space="preserve">
+    <value>Документите не могат да бъдат изпратени за подписване. {0}</value>
+  </data>
+  <data name="Error_InternalProcess" xml:space="preserve">
+    <value>Текущият процес е вътрешен процес.</value>
+  </data>
+  <data name="NoSelectedDocuments" xml:space="preserve">
+    <value>Няма избрани документи.</value>
+  </data>
+  <data name="Fund_RawFund" xml:space="preserve">
+    <value>Това е фонд с необработени документи.</value>
+  </data>
+  <data name="Inventory_RawInventory" xml:space="preserve">
+    <value>Това е груб опис.</value>
+  </data>
+  <data name="Error_CannotAddInventory" xml:space="preserve">
+    <value>Инвентарен опис не може да бъде добавен към фонда.</value>
+  </data>
+  <data name="Error_CannotAddRawInventory" xml:space="preserve">
+    <value>Груб опис не може да бъде добавен към фонда.</value>
+  </data>
+  <data name="Error_CannotAddSystemInventory" xml:space="preserve">
+    <value>Служебен опис не може да бъде добавен към фонда.</value>
+  </data>
+  <data name="Error_CannotCreateInventory" xml:space="preserve">
+    <value>Описът не може да бъде създаден! {0}</value>
+  </data>
+  <data name="Error_NoActiveProcessStep" xml:space="preserve">
+    <value>Процесът няма активна стъпка.</value>
+  </data>
+  <data name="Error_PackageFileIsFromReport" xml:space="preserve">
+    <value>Този файл идва от доклада  и може да бъде изтрит само от опциите на доклада.</value>
+  </data>
+  <data name="Error_FileAlreadyExists" xml:space="preserve">
+    <value>Файл {0}  вече съществува.</value>
+  </data>
+  <data name="Error_FileDoesNotExists" xml:space="preserve">
+    <value>Файл {0} не съществува.</value>
+  </data>
+  <data name="Search_Canceled" xml:space="preserve">
+    <value>Текущото търсене е отменено.</value>
+  </data>
+  <data name="Search_Timeout" xml:space="preserve">
+    <value>Текущото търсене отнема твърде много време. Въведете по-точни критерии за търсене и опитайте отново.</value>
+  </data>
+  <data name="Error_MissingRedirectArchiveId" xml:space="preserve">
+    <value>Липсва архив, към който да се пренасочи!</value>
+  </data>
+  <data name="Error_CannotSendModificationRequest" xml:space="preserve">
+    <value>Заявката за корекции не може да бъде изпратена. {0}</value>
+  </data>
+  <data name="Error_ApplicationDataNotForEdit" xml:space="preserve">
+    <value>Не можете да променяте данни по описа на заявлението!</value>
+  </data>
+  <data name="Error_ApplicationNotForEdit" xml:space="preserve">
+    <value>Статусът на заявлението ({0}) не позволява промени!</value>
+  </data>
+  <data name="Error_NoPermission" xml:space="preserve">
+    <value>Тази задача е разпределена на друг!</value>
+  </data>
+  <data name="Error_DuplicatedAENumber" xml:space="preserve">
+    <value>Архивна единица с този номер вече съществува!</value>
+  </data>
+  <data name="Error_DuplicatedDocNumber" xml:space="preserve">
+    <value>Документ с този номер вече съществува!</value>
+  </data>
+  <data name="DuplicatedDocImportNumberInAe" xml:space="preserve">
+    <value>Sheet {0}: Дублиран номер {1} на документ в архивна единица с номер {2} на ред {3}!</value>
+  </data>
+  <data name="DocumentImportNoEntitiesFound" xml:space="preserve">
+    <value>Не са намерени данни за документи!</value>
+  </data>
+  <data name="InvalidEndDateMoreThanStartDay" xml:space="preserve">
+    <value>Sheet {0}:Поле Начална дата  трябва да бъде по-малко от Крайна дата на ред {1}</value>
+  </data>
+  <data name="Error_UnnumberedDocuments" xml:space="preserve">
+    <value>Не всички документи имат регистрирани номера.</value>
+  </data>
+  <data name="Error_NotAssignedStep" xml:space="preserve">
+    <value>Стъпката от процеса е назначена на друг потребител!</value>
+  </data>
+</root>

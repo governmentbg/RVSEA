@@ -1,0 +1,35 @@
+@use "@/assets/styles/common.scss" as *;
+@use "@/assets/styles/index.scss" as *;
+
+// :deep(div:has(a.v-btn)) {
+//     text-align: center;
+// }
+
+:deep(a.v-btn) {
+    //display: inline-block;
+    //margin: 0px 30px;
+    background-color: var(--ISDA-main-color4);
+    padding: auto;
+}
+
+:deep(a.v-btn:first-of-type) {
+    color: rgb(255, 255, 255) !important;
+}
+
+:deep(a.v-btn:nth-of-type(2)) {
+    color: var(--ISDA-main-color1) !important;
+}
+
+// :deep(.v-btn__content),
+// :deep(.v-btn__content) {
+//     margin: 8px auto;
+// }
+
+// :deep(a.v-btn > div:nth-of-type(2)) {
+//     margin: 5px 0px;
+// }
+
+:deep(h3) {
+    @include title();
+    text-align: center;
+}

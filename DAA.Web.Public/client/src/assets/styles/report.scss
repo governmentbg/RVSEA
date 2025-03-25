@@ -1,0 +1,109 @@
+@use "@/assets/styles/common.scss" as *;
+
+:deep(.loader) {
+    @include loader()
+}
+
+.v-card {
+    @include card;
+    padding: 20px;
+    margin-bottom: 50px !important;
+}
+
+.v-card-title, h3 {
+    @include title();
+    text-align: center;
+}
+
+.v-row {
+    margin: 20px auto;
+}
+
+.v-row > div > div {
+    padding: 0px;
+}
+
+.overflowX {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+:deep(button) {
+    @include button();
+    float: right;
+    margin: 50px 15px 15px 15px;
+}
+
+:deep(button.cancel) {
+    @include button($background: var(--ISDA-main-color1))
+}
+
+:deep(input[type="checkbox"]:checked),
+:deep(.is-selected),
+:deep(.multiselect-tag) {
+    @include check-input()
+}
+
+:deep(li.v-breadcrumbs-item--disabled) {
+    padding: 5px 8px;
+    border-radius: 10px;
+    background-color: var(--ISDA-main-color2) !important;
+    color: var(--ISDA-main-color4) !important;
+}
+
+:deep(td),
+:deep(tr) {
+    border-color: rgb(154, 154, 154) !important;
+}
+
+// :deep(.v-input__control) {
+//     max-height: 38px;
+// }
+
+:deep(.v-text-field) {
+    max-height: 74px;
+}
+
+:deep(.textField) {
+    max-height: 74px;
+}
+
+:deep(.textField .v-checkbox .v-input__control) {
+    top: -24px;
+    position: relative;
+} 
+
+:deep(.textField .v-field__input) {
+    padding-top: 0px;
+}
+
+:deep(.v-field__clearable) {
+    padding-top: 5px;
+}
+
+:deep(.textField .v-field__field :nth-child(2)) {
+    top: 37px;
+    left: -8px;
+}
+
+:deep(div.d-flex span) {
+    margin: auto;
+}
+
+:deep(.v-input__details) {
+    position: absolute;
+}
+
+:deep(.v-input__details > .v-messages) {
+    position: relative;
+    top: -5px;
+    left: -6px;
+}
+
+.reportFieldHeight {
+    height: fit-content!important;
+}
+
+.reportNullCheckbox{
+    min-width: 100px;
+}

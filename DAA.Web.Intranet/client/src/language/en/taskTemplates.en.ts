@@ -1,0 +1,16 @@
+export default {
+    addTemplate: 'Add a template',
+    createTitle: 'New template',
+    deleteConfirmMessage: 'Delete template "{0}"',
+    description: 'Description',
+    file: 'Document',
+    mainTitle: 'Task templates',
+    noTemplates: 'No templates added',
+    notRequired: 'Not required',
+    process: 'Process',
+    processSteps: 'Process step',
+    relatedContentUrl: 'Related content url',
+    required: 'Requiered',
+    title: 'Title',
+    updateTitle: 'Change template',
+}

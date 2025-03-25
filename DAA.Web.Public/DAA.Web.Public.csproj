@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<!-- Този параметър се използва най-долу в секцията за Publish. -->
+		<SpaRoot>.\client\</SpaRoot>
+
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<_WebToolingArtifacts Remove="Properties\PublishProfiles\AppTest.Public.pubxml" />
+		<_WebToolingArtifacts Remove="Properties\PublishProfiles\Demo.Public.pubxml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.9">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+		<PackageReference Include="Serilog.AspNetCore" Version="5.0.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Data\" />
+		<Folder Include="Models\" />
+		<Folder Include="wwwroot\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Properties\PublishProfiles\Demo.Public.pubxml.user" />
+		<None Include="Properties\PublishProfiles\AppTest.Public.pubxml.user" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\DAA.Data.Files\DAA.Data.Files.csproj" />
+		<ProjectReference Include="..\DAA.Data\DAA.Data.csproj" />
+		<ProjectReference Include="..\DAA.Extensions\DAA.Extensions.csproj" />
+		<ProjectReference Include="..\DAA.Models\DAA.Models.csproj" />
+		<ProjectReference Include="..\DAA.Services\DAA.Services.csproj" />
+		<ProjectReference Include="..\DAA.Shared\DAA.Shared.csproj" />
+	</ItemGroup>
+
+	<!--
+    Тази секция се изпълнява при Publish. Build-ва SPA проекта (Vue.js приложението) за избрания environment
+    и копира съдържанието на dist папката в папка wwwroot на този проект, която е стандартната папка на asp.net за статично съдържание.
+	-->
+	<Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
+		<!-- Преди да build-не SPA проекта подсигурява, че са изтеглени точните версии на npm пакетите, описаните в package.json. -->
+		<Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+		<!--
+			Build-ва SPA проекта за същия environment, за който се публикува този проект.
+			Например, ако този проект се публикува за "AzureTest", SPA проектът се build-ва с настройките от файла .env.AzureTest.
+		-->
+		<!--<Exec WorkingDirectory="$(SpaRoot)" Command="npm run build __ __mode $(EnvironmentName)" />-->
+
+		<Exec WorkingDirectory="$(SpaRoot)" Command="npm run build:$(EnvironmentName)" />
+	</Target>
+
+</Project>

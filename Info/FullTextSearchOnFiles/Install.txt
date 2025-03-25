@@ -1,0 +1,126 @@
+/* Инсталация на филтри за office файловете и Pdf
+
+Office pack: http://www.microsoft.com/download/en/details.aspx?id=17062
+Докато не рестартирах машината, командата, която казва кои са познатите типове не показваше новите типове.
+
+
+Pdf: https://supportdownloads.adobe.com/product.jsp?product=1&platform=Windows
+!!! Важно! Задължително добавяне на bin папката от инсталацията на pdf филтъра в системната(не тази на текущия потребител!) променлива на средата PATH
+!!! добавяне на права за потребителя на fts модула за достъп до папка bin - може да е различен от този на самата инстанция - дадох fullcontrol access на Everyone на папка bin
+Според различни източници, инсталационната папка за pdf филтъра трябва да е без интервали
+
+!!! - командите не сработват - изтриване на индекса и добавяне наново е начинът!
+ХХХ с тези команди се обновяват индексите за вече записани в БД файлове:
+EXEC sp_fulltext_service 'update_languages'; 
+EXEC sp_fulltext_service 'load_os_resources', 1;
+EXEC sp_fulltext_service 'restart_all_fdhosts';
+
+с това се проверява какви формати се поддържат
+SELECT * FROM sys.fulltext_document_types
+
+
+Ако след инсталацията на Pdf филтъра, .pdf липсва в списъка, изпълняват се долните 2 команди:
+EXEC sp_fulltext_service 'load_os_resources', 1  
+GO
+EXEC sp_fulltext_service 'verify_signature', 0
+GO
+източник: https://blog.sqlauthority.com/2018/02/12/sql-server-full-text-search-not-working-pdf-documents/
+*/
+
+
+
+https://www.red-gate.com/simple-talk/databases/sql-server/database-administration-sql-server/full-text-searches-on-documents-in-filetables/
+
+CREATE TABLE [dbo].[FileContent] AS FILETABLE ON [PRIMARY] FILESTREAM_ON [FILESTREAM_GROUP]
+WITH
+(
+FILETABLE_DIRECTORY = N'FileContent', FILETABLE_COLLATE_FILENAME = Cyrillic_General_CI_AS, 
+FILETABLE_PRIMARY_KEY_CONSTRAINT_NAME=[PK_FileContent], 
+FILETABLE_STREAMID_UNIQUE_CONSTRAINT_NAME=[UI_FileContent_StreamId], 
+FILETABLE_FULLPATH_UNIQUE_CONSTRAINT_NAME=[UI_FileContent_FullPath]
+)
+GO
+
+ако се създаде констрейнт FILETABLE_STREAMID_UNIQUE_CONSTRAINT_NAME, то после не е нужно да се прави Unique Index по stream_id
+
+
+--Drop Fulltext Catalog FilesFtCatalog
+If Not Exists (Select 1 From sys.fulltext_catalogs Where [name] = 'FilesFtCatalog')
+	Create Fulltext Catalog FilesFtCatalog As Default  
+GO 
+
+Declare @result int;
+Select @result = COLUMNPROPERTY(OBJECT_ID('dbo.FileContent'), 'file_stream', 'IsFulltextIndexed')
+If (@result = 1) Drop FullText Index On FileContent
+
+-- create the full-text index 
+Create Fulltext Index On FileContent (file_stream Type Column file_type) Key Index UI_FileContent_StreamId; 
+GO
+
+
+
+-- Пресъздаване на каталога
+ALTER FULLTEXT CATALOG FilesFtCatalog REBUILD
+
+-- Примерно използване
+Select Stream_id from FileContent Where Contains(file_stream, 'Studio')
+
+
+
+-- Проверка на текущото състояние на създаването на индексите
+SELECT  TE.name AS [EventName] ,
+        DB_NAME(t.DatabaseID) AS DatabaseName ,
+        t.DatabaseID ,
+        t.NTDomainName ,
+        t.ApplicationName ,
+        t.LoginName ,
+        t.SPID ,
+        t.StartTime ,
+        t.IsSystem
+FROM    sys.fn_trace_gettable(CONVERT(VARCHAR(150), ( SELECT TOP 1
+                                                              f.[value]
+                                                      FROM    sys.fn_trace_getinfo(NULL) f
+                                                      WHERE   f.property = 2
+                                                    )), DEFAULT) T
+        JOIN sys.trace_events TE ON T.EventClass = TE.trace_event_id
+WHERE   DB_NAME(t.DatabaseID) = 'DAA.BufferFiles'
+		AND (
+		te.name = 'FT:Crawl Started'
+        OR te.name = 'FT:Crawl Aborted'
+        OR te.name = 'FT:Crawl Stopped')
+	ORDER BY t.StartTime DESC
+
+
+
+-- Втори вариант:
+
+declare @FTCatalogName nvarchar(250)
+set @FTCatalogName = 'FilesFtCatalog'
+ 
+SELECT
+cat.name AS [Name],
+cat.fulltext_catalog_id AS [ID],
+CAST(FULLTEXTCATALOGPROPERTY(cat.name,'AccentSensitivity') AS bit) AS [IsAccentSensitive],
+CAST(cat.is_default AS bit) AS [IsDefault],
+dp.name AS [Owner],
+FULLTEXTCATALOGPROPERTY(cat.name,'LogSize') AS [ErrorLogSize],
+FULLTEXTCATALOGPROPERTY(cat.name,'IndexSize') AS [FullTextIndexSize (MB)],
+FULLTEXTCATALOGPROPERTY(cat.name,'ItemCount') AS [ItemCount]
+,(SELECT CASE FULLTEXTCATALOGPROPERTY(cat.name,'PopulateStatus')
+        WHEN 0 THEN 'Idle'
+        WHEN 1 THEN 'Full Population In Progress'
+        WHEN 2 THEN 'Paused'
+        WHEN 3 THEN 'Throttled'
+        WHEN 4 THEN 'Recovering'
+        WHEN 5 THEN 'Shutdown'
+        WHEN 6 THEN 'Incremental Population In Progress'
+        WHEN 7 THEN 'Building Index'
+        WHEN 8 THEN 'Disk Full.  Paused'
+        WHEN 9 THEN 'Change Tracking' END) AS PopulateStatus
+FROM
+sys.fulltext_catalogs AS cat
+LEFT OUTER JOIN sys.filegroups AS fg ON cat.data_space_id = fg.data_space_id
+LEFT OUTER JOIN sys.database_principals AS dp ON cat.principal_id=dp.principal_id
+WHERE
+(cat.name=@FTCatalogName)
+GO

@@ -1,0 +1,20 @@
+@use "@/assets/styles/common.scss" as *;
+
+
+.v-overlay .v-card {
+    @include card;
+    // min-height: 450px !important;
+}
+
+.v-overlay .v-card > .v-card-title {
+    @include title();
+}
+
+:deep(button) {
+    @include button();
+    //margin: 50px 15px 15px 15px;
+}
+
+:deep(button.cancel) {
+    @include button($color: var(--ISDA-main-color1))
+}

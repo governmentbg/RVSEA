@@ -1,0 +1,352 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAA.Models", "DAA.Models\DAA.Models.csproj", "{86D4A2F0-A8D2-425D-BF3F-7BDE5A5B1C6A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAA.Data", "DAA.Data\DAA.Data.csproj", "{0840106C-1B72-4D34-9688-C62CDF8567E0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAA.Shared", "DAA.Shared\DAA.Shared.csproj", "{FC26912D-F34E-48A6-9EC0-FA72565885E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{208A21F6-BEBC-4237-A876-BEDF4D890776}"
+	ProjectSection(SolutionItems) = preProject
+		scaffold.txt = scaffold.txt
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAA.Services", "DAA.Services\DAA.Services.csproj", "{FB381ED1-7D48-4CAC-8B31-DACD6E02EF5F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAA.Web.Intranet", "DAA.Web.Intranet\DAA.Web.Intranet.csproj", "{F38A5A8E-CE82-4500-A8C8-DE2BEE909F00}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAA.Web.Public", "DAA.Web.Public\DAA.Web.Public.csproj", "{9D7E1E9F-9CDE-44E5-A995-C21C66D24D5D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAA.Extensions", "DAA.Extensions\DAA.Extensions.csproj", "{8EC806CD-E059-4F57-A536-C4E994F7F422}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StoredProcedures", "StoredProcedures", "{04455861-70A1-40C5-8FDE-04A3BBB19DED}"
+	ProjectSection(SolutionItems) = preProject
+		FundMemoryPublicReport.sql = FundMemoryPublicReport.sql
+		FundMemoryReportSummary.sql = FundMemoryReportSummary.sql
+		GetAccountAndDescriptionOfFilmDocumentsBook.sql = GetAccountAndDescriptionOfFilmDocumentsBook.sql
+		GetAccountAndDescriptionOfFilmDocumentsBookSummary.sql = GetAccountAndDescriptionOfFilmDocumentsBookSummary.sql
+		GetArchiveEntitiesByInventory.sql = GetArchiveEntitiesByInventory.sql
+		GetArchiveEntitiesByInventoryCount.sql = GetArchiveEntitiesByInventoryCount.sql
+		GetArchiveEntitiesByInventoryPublic.sql = GetArchiveEntitiesByInventoryPublic.sql
+		GetArchiveEntity.sql = GetArchiveEntity.sql
+		GetCompilationAndNTOOfEDocumentsCombinedData.sql = GetCompilationAndNTOOfEDocumentsCombinedData.sql
+		GetCompilationAndNTOOfEDocumentsReport.sql = GetCompilationAndNTOOfEDocumentsReport.sql
+		GetCompilationAndNTOOfEDocumentsSummary.sql = GetCompilationAndNTOOfEDocumentsSummary.sql
+		GetDocument.sql = GetDocument.sql
+		GetDocumentsByArchiveEntity.sql = GetDocumentsByArchiveEntity.sql
+		GetDocumentsByArchiveEntityCount.sql = GetDocumentsByArchiveEntityCount.sql
+		GetDocumentsByArchiveEntityPublic.sql = GetDocumentsByArchiveEntityPublic.sql
+		GetFund.sql = GetFund.sql
+		GetFundAvailabilityReport.sql = GetFundAvailabilityReport.sql
+		GetFundAvailabilityReportSummary.sql = GetFundAvailabilityReportSummary.sql
+		GetFundAvailabilityReportTotalRows.sql = GetFundAvailabilityReportTotalRows.sql
+		GetFundDataPublicReport.sql = GetFundDataPublicReport.sql
+		GetFundDataPublicReportSummary.sql = GetFundDataPublicReportSummary.sql
+		GetFundMemoriesListInternalReport.sql = GetFundMemoriesListInternalReport.sql
+		GetFundMemoriesListInternalReportSummary.sql = GetFundMemoriesListInternalReportSummary.sql
+		GetFundMemoriesListReport.sql = GetFundMemoriesListReport.sql
+		GetFundMemoriesListReportSummary.sql = GetFundMemoriesListReportSummary.sql
+		GetFundMemoryPublicReport.sql = GetFundMemoryPublicReport.sql
+		GetFundPublicReport.sql = GetFundPublicReport.sql
+		GetFundReportSummary.sql = GetFundReportSummary.sql
+		GetFundsListReport.sql = GetFundsListReport.sql
+		GetFundsListReportSummary.sql = GetFundsListReportSummary.sql
+		GetInsuranceFundOfCopiesOfForeignArchives.sql = GetInsuranceFundOfCopiesOfForeignArchives.sql
+		GetInsuranceFundOfCopiesOfForeignArchivesSummary.sql = GetInsuranceFundOfCopiesOfForeignArchivesSummary.sql
+		GetInventory.sql = GetInventory.sql
+		GetInventoryReport.sql = GetInventoryReport.sql
+		GetInventoryReportCombined.sql = GetInventoryReportCombined.sql
+		GetInventoryReportSummary.sql = GetInventoryReportSummary.sql
+		GetLibraryCard.sql = GetLibraryCard.sql
+		GetListOfPartialReceiptsInArchiveReport.sql = GetListOfPartialReceiptsInArchiveReport.sql
+		GetListOfPartialReceiptsInArchiveReportCombined.sql = GetListOfPartialReceiptsInArchiveReportCombined.sql
+		GetListOfPartialReceiptsInArchiveReportSummary.sql = GetListOfPartialReceiptsInArchiveReportSummary.sql
+		GetNomenclatureByType.sql = GetNomenclatureByType.sql
+		GetPartialReceiptsListReport.sql = GetPartialReceiptsListReport.sql
+		GetPartialReceiptsListReportSummary.sql = GetPartialReceiptsListReportSummary.sql
+		GetPartialReceiptsPublicReport.sql = GetPartialReceiptsPublicReport.sql
+		GetPartialReceiptsPublicReportSummary.sql = GetPartialReceiptsPublicReportSummary.sql
+		GetReceiptsListReport.sql = GetReceiptsListReport.sql
+		GetReceiptsListReportSummary.sql = GetReceiptsListReportSummary.sql
+		GetRegisterOfDigitalObjectsPublicReport.sql = GetRegisterOfDigitalObjectsPublicReport.sql
+		GetRegisterOfDigitalObjectsPublicReportSummary.sql = GetRegisterOfDigitalObjectsPublicReportSummary.sql
+		GetSpecialRegistrationList.sql = GetSpecialRegistrationList.sql
+		GetSpecialRegistrationListReportSummary.sql = GetSpecialRegistrationListReportSummary.sql
+		GetWorkListForPriorityRestorationReport.sql = GetWorkListForPriorityRestorationReport.sql
+		GetWorkListForPriorityRestorationReportSummary.sql = GetWorkListForPriorityRestorationReportSummary.sql
+		MainSearchComponent.sql = MainSearchComponent.sql
+		MainSearchComponentInternal.sql = MainSearchComponentInternal.sql
+		SearchArchivalEntitiesForMainSearchComponent.sql = SearchArchivalEntitiesForMainSearchComponent.sql
+		SearchArchivalEntitiesForMainSearchComponentInternal.sql = SearchArchivalEntitiesForMainSearchComponentInternal.sql
+		SearchArchiveEntities.sql = SearchArchiveEntities.sql
+		SearchDocumentsForMainSearchComponent.sql = SearchDocumentsForMainSearchComponent.sql
+		SearchFilmCardsForMainSearchComponent.sql = SearchFilmCardsForMainSearchComponent.sql
+		SearchFilmCardsForMainSearchComponentInternal.sql = SearchFilmCardsForMainSearchComponentInternal.sql
+		SearchFunds.sql = SearchFunds.sql
+		SearchFundsForMainSearchComponent.sql = SearchFundsForMainSearchComponent.sql
+		SearchFundsForMainSearchComponentInternal.sql = SearchFundsForMainSearchComponentInternal.sql
+		SearchInventories.sql = SearchInventories.sql
+		SearchInventoriesForMainSearchComponent.sql = SearchInventoriesForMainSearchComponent.sql
+		SearchInventoriesForMainSearchComponentInternal.sql = SearchInventoriesForMainSearchComponentInternal.sql
+		SearchKMFForMainSearchComponent.sql = SearchKMFForMainSearchComponent.sql
+		SearchKMFForMainSearchComponentInternal.sql = SearchKMFForMainSearchComponentInternal.sql
+		sp_CheckIfNewArchivalEntityNumberIsValid.sql = sp_CheckIfNewArchivalEntityNumberIsValid.sql
+		sp_CheckIfNewFundNumberIsValid.sql = sp_CheckIfNewFundNumberIsValid.sql
+		sp_CheckIfNewInventoryNumberIsValid.sql = sp_CheckIfNewInventoryNumberIsValid.sql
+		sp_GetCountriesNomenclature.sql = sp_GetCountriesNomenclature.sql
+		sp_GetDocumentAncestorsData.sql = sp_GetDocumentAncestorsData.sql
+		sp_GetInventoryBook.sql = sp_GetInventoryBook.sql
+		sp_GetInventoryBookOfCopiesFromForeignArchivesReport.sql = sp_GetInventoryBookOfCopiesFromForeignArchivesReport.sql
+		sp_GetInventoryBookOfCopiesFromForeignArchivesSummary.sql = sp_GetInventoryBookOfCopiesFromForeignArchivesSummary.sql
+		sp_GetInventoryBookSummary.sql = sp_GetInventoryBookSummary.sql
+		sp_GetLastArchiveEntityNumbers.sql = sp_GetLastArchiveEntityNumbers.sql
+		sp_GetLastFundNumbers.sql = sp_GetLastFundNumbers.sql
+		sp_GetLastInventoryNumbers.sql = sp_GetLastInventoryNumbers.sql
+		sp_GetListOfRoughDocumentsReport.sql = sp_GetListOfRoughDocumentsReport.sql
+		sp_GetListOfRoughDocumentsReportCombined.sql = sp_GetListOfRoughDocumentsReportCombined.sql
+		sp_GetListOfRoughDocumentsReportSummary.sql = sp_GetListOfRoughDocumentsReportSummary.sql
+		sp_GetNumberOfArchiveEntitiesOrderedByEmployeeCombined.sql = sp_GetNumberOfArchiveEntitiesOrderedByEmployeeCombined.sql
+		sp_GetNumberOfArchiveEntitiesOrderedByEmployeeReport.sql = sp_GetNumberOfArchiveEntitiesOrderedByEmployeeReport.sql
+		sp_GetNumberOfArchiveEntitiesOrderedByEmployeeSummary.sql = sp_GetNumberOfArchiveEntitiesOrderedByEmployeeSummary.sql
+		sp_GetNumberOfArchiveEntitiesOrderedByReaderCombined.sql = sp_GetNumberOfArchiveEntitiesOrderedByReaderCombined.sql
+		sp_GetNumberOfArchiveEntitiesOrderedByReaderReport.sql = sp_GetNumberOfArchiveEntitiesOrderedByReaderReport.sql
+		sp_GetNumberOfArchiveEntitiesOrderedByReaderSummary.sql = sp_GetNumberOfArchiveEntitiesOrderedByReaderSummary.sql
+		sp_GetNumberOfDocumentsOrderedByEmployeeReport.sql = sp_GetNumberOfDocumentsOrderedByEmployeeReport.sql
+		sp_GetNumberOfDocumentsOrderedByEmployeeReportCombined.sql = sp_GetNumberOfDocumentsOrderedByEmployeeReportCombined.sql
+		sp_GetNumberOfDocumentsOrderedByEmployeeReportSummary.sql = sp_GetNumberOfDocumentsOrderedByEmployeeReportSummary.sql
+		sp_GetNumberOfDocumentsOrderedByReaderReport.sql = sp_GetNumberOfDocumentsOrderedByReaderReport.sql
+		sp_GetNumberOfDocumentsOrderedByReaderReportCombined.sql = sp_GetNumberOfDocumentsOrderedByReaderReportCombined.sql
+		sp_GetNumberOfDocumentsOrderedByReaderReportSummary.sql = sp_GetNumberOfDocumentsOrderedByReaderReportSummary.sql
+		sp_GetQualityControlCombined.sql = sp_GetQualityControlCombined.sql
+		sp_GetQualityControlReport.sql = sp_GetQualityControlReport.sql
+		sp_GetQualityControlSummary.sql = sp_GetQualityControlSummary.sql
+		sp_GetRegisterOfDigitizedDocumentsCombined.sql = sp_GetRegisterOfDigitizedDocumentsCombined.sql
+		sp_GetRegisterOfDigitizedDocumentsReport.sql = sp_GetRegisterOfDigitizedDocumentsReport.sql
+		sp_GetRegisterOfDigitizedDocumentsSummary.sql = sp_GetRegisterOfDigitizedDocumentsSummary.sql
+		sp_GetUserActionsJournalReport.sql = sp_GetUserActionsJournalReport.sql
+		sp_GetUserActionsJournalReportSummary.sql = sp_GetUserActionsJournalReportSummary.sql
+		SQL sp_GetArchive.sql = SQL sp_GetArchive.sql
+		SQL sp_GetArchives.sql = SQL sp_GetArchives.sql
+		SQL sp_GetFundInventories.sql = SQL sp_GetFundInventories.sql
+		SQL sp_GetFundInventoriesCount.sql = SQL sp_GetFundInventoriesCount.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Views", "Views", "{8D14580A-B045-4E68-B0E1-8802D1AA65C5}"
+	ProjectSection(SolutionItems) = preProject
+		SQL v_ArchivalEntities View.sql = SQL v_ArchivalEntities View.sql
+		SQL v_DigitalObjects View.sql = SQL v_DigitalObjects View.sql
+		SQL v_Documents View.sql = SQL v_Documents View.sql
+		SQL v_Films View.sql = SQL v_Films View.sql
+		SQL v_Funds View.sql = SQL v_Funds View.sql
+		SQL v_Inventories View.sql = SQL v_Inventories View.sql
+		SQL v_PublicArchivalEntities View.sql = SQL v_PublicArchivalEntities View.sql
+		SQL v_PublicDocuments View.sql = SQL v_PublicDocuments View.sql
+		SQL v_PublicFilmCards View.sql = SQL v_PublicFilmCards View.sql
+		SQL v_PublicFilms View.sql.sql = SQL v_PublicFilms View.sql.sql
+		v_Funds_Search View.sql = v_Funds_Search View.sql
+		v_Funds_Search_FundDrafts.sql = v_Funds_Search_FundDrafts.sql
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAA.Data.Files", "DAA.Data.Files\DAA.Data.Files.csproj", "{6AEDC97C-8B4C-42A6-9769-9F8CD96228C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Databases", "Databases", "{750F0EDC-1770-4353-86B8-2CC217CD0929}"
+	ProjectSection(SolutionItems) = preProject
+		SQL AdjunctFiles DB.sql = SQL AdjunctFiles DB.sql
+		SQL BufferFiles DB.sql = SQL BufferFiles DB.sql
+		SQL Files DB.sql = SQL Files DB.sql
+		SQL MasterFiles DB.sql = SQL MasterFiles DB.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FullText", "FullText", "{DB1EEB84-84C1-4202-97BE-05BC9F989ED8}"
+	ProjectSection(SolutionItems) = preProject
+		SQL Full Text Catalog and Indexes.sql = SQL Full Text Catalog and Indexes.sql
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAA.App.FileUpload", "DAA.App.FileUpload\DAA.App.FileUpload.csproj", "{221B0393-9AEB-4C80-BFAF-7132690070D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Functions", "Functions", "{452E29F9-CE04-4225-8EEE-1138372500BA}"
+	ProjectSection(SolutionItems) = preProject
+		SplitString.sql = SplitString.sql
+		StringSplit2.sql = StringSplit2.sql
+		StringSplit3.sql = StringSplit3.sql
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAA.FileUtils", "DAA.FileUtils\DAA.FileUtils.csproj", "{283B6F1B-3949-4746-93A4-45ACB9E20B0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Info", "Info", "{C2647EF0-353F-4C0A-98F4-3AA629E321E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FullTextSearchOnFiles", "FullTextSearchOnFiles", "{05F8149E-CA67-47FE-849D-7B80186EC1DE}"
+	ProjectSection(SolutionItems) = preProject
+		Info\FullTextSearch\FilterPack64bit.exe = Info\FullTextSearch\FilterPack64bit.exe
+		Info\FullTextSearch\Full Text Searches on Documents in FileTables - Simple Talk.mhtml = Info\FullTextSearch\Full Text Searches on Documents in FileTables - Simple Talk.mhtml
+		Info\FullTextSearch\Install.txt = Info\FullTextSearch\Install.txt
+		Info\FullTextSearch\PDFFilter64Setup.msi = Info\FullTextSearch\PDFFilter64Setup.msi
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Initial scripts", "Initial scripts", "{FCDF205D-6567-4692-A718-1F1DD371FD56}"
+	ProjectSection(SolutionItems) = preProject
+		Initial scripts\1. CreateDBTables.sql = Initial scripts\1. CreateDBTables.sql
+		Initial scripts\2. Views.sql = Initial scripts\2. Views.sql
+		Initial scripts\3. Functions.sql = Initial scripts\3. Functions.sql
+		Initial scripts\4. Procedures.sql = Initial scripts\4. Procedures.sql
+		Initial scripts\5. Nomenclatures.sql = Initial scripts\5. Nomenclatures.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Update scripts", "Update scripts", "{BC75196D-3CAB-46EF-BFF8-B9554668F73A}"
+	ProjectSection(SolutionItems) = preProject
+		Update scripts\Update_1.0.sql = Update scripts\Update_1.0.sql
+		Update scripts\Update_1.1.sql = Update scripts\Update_1.1.sql
+		Update scripts\Update_1.10.sql = Update scripts\Update_1.10.sql
+		Update scripts\Update_1.11.sql = Update scripts\Update_1.11.sql
+		Update scripts\Update_1.12.sql = Update scripts\Update_1.12.sql
+		Update scripts\Update_1.13.sql = Update scripts\Update_1.13.sql
+		Update scripts\Update_1.14.sql = Update scripts\Update_1.14.sql
+		Update scripts\Update_1.15.sql = Update scripts\Update_1.15.sql
+		Update scripts\Update_1.16.sql = Update scripts\Update_1.16.sql
+		Update scripts\Update_1.17.sql = Update scripts\Update_1.17.sql
+		Update scripts\Update_1.18.sql = Update scripts\Update_1.18.sql
+		Update scripts\Update_1.19.sql = Update scripts\Update_1.19.sql
+		Update scripts\Update_1.2.sql = Update scripts\Update_1.2.sql
+		Update scripts\Update_1.20.sql = Update scripts\Update_1.20.sql
+		Update scripts\Update_1.21.sql = Update scripts\Update_1.21.sql
+		Update scripts\Update_1.22.sql = Update scripts\Update_1.22.sql
+		Update scripts\Update_1.23.sql = Update scripts\Update_1.23.sql
+		Update scripts\Update_1.24.sql = Update scripts\Update_1.24.sql
+		Update scripts\Update_1.25.sql = Update scripts\Update_1.25.sql
+		Update scripts\Update_1.26.sql = Update scripts\Update_1.26.sql
+		Update scripts\Update_1.27.sql = Update scripts\Update_1.27.sql
+		Update scripts\Update_1.28.sql = Update scripts\Update_1.28.sql
+		Update scripts\Update_1.29.sql = Update scripts\Update_1.29.sql
+		Update scripts\Update_1.3.sql = Update scripts\Update_1.3.sql
+		Update scripts\Update_1.30.sql = Update scripts\Update_1.30.sql
+		Update scripts\Update_1.31.sql = Update scripts\Update_1.31.sql
+		Update scripts\Update_1.32.sql = Update scripts\Update_1.32.sql
+		Update scripts\Update_1.33.sql = Update scripts\Update_1.33.sql
+		Update scripts\Update_1.34.sql = Update scripts\Update_1.34.sql
+		Update scripts\Update_1.35.sql = Update scripts\Update_1.35.sql
+		Update scripts\Update_1.36.sql = Update scripts\Update_1.36.sql
+		Update scripts\Update_1.37.sql = Update scripts\Update_1.37.sql
+		Update scripts\Update_1.38.sql = Update scripts\Update_1.38.sql
+		Update scripts\Update_1.39.sql = Update scripts\Update_1.39.sql
+		Update scripts\Update_1.4.sql = Update scripts\Update_1.4.sql
+		Update scripts\Update_1.40.sql = Update scripts\Update_1.40.sql
+		Update scripts\Update_1.41.sql = Update scripts\Update_1.41.sql
+		Update scripts\Update_1.42.sql = Update scripts\Update_1.42.sql
+		Update scripts\Update_1.43.sql = Update scripts\Update_1.43.sql
+		Update scripts\Update_1.44.sql = Update scripts\Update_1.44.sql
+		Update scripts\Update_1.45.sql = Update scripts\Update_1.45.sql
+		Update scripts\Update_1.46.sql = Update scripts\Update_1.46.sql
+		Update scripts\Update_1.5.sql = Update scripts\Update_1.5.sql
+		Update scripts\Update_1.6.sql = Update scripts\Update_1.6.sql
+		Update scripts\Update_1.7.sql = Update scripts\Update_1.7.sql
+		Update scripts\Update_1.8.sql = Update scripts\Update_1.8.sql
+		Update scripts\Update_1.9.sql = Update scripts\Update_1.9.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86D4A2F0-A8D2-425D-BF3F-7BDE5A5B1C6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86D4A2F0-A8D2-425D-BF3F-7BDE5A5B1C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86D4A2F0-A8D2-425D-BF3F-7BDE5A5B1C6A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{86D4A2F0-A8D2-425D-BF3F-7BDE5A5B1C6A}.Debug|x86.Build.0 = Debug|Any CPU
+		{86D4A2F0-A8D2-425D-BF3F-7BDE5A5B1C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86D4A2F0-A8D2-425D-BF3F-7BDE5A5B1C6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86D4A2F0-A8D2-425D-BF3F-7BDE5A5B1C6A}.Release|x86.ActiveCfg = Release|Any CPU
+		{86D4A2F0-A8D2-425D-BF3F-7BDE5A5B1C6A}.Release|x86.Build.0 = Release|Any CPU
+		{0840106C-1B72-4D34-9688-C62CDF8567E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0840106C-1B72-4D34-9688-C62CDF8567E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0840106C-1B72-4D34-9688-C62CDF8567E0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0840106C-1B72-4D34-9688-C62CDF8567E0}.Debug|x86.Build.0 = Debug|Any CPU
+		{0840106C-1B72-4D34-9688-C62CDF8567E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0840106C-1B72-4D34-9688-C62CDF8567E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0840106C-1B72-4D34-9688-C62CDF8567E0}.Release|x86.ActiveCfg = Release|Any CPU
+		{0840106C-1B72-4D34-9688-C62CDF8567E0}.Release|x86.Build.0 = Release|Any CPU
+		{FC26912D-F34E-48A6-9EC0-FA72565885E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC26912D-F34E-48A6-9EC0-FA72565885E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC26912D-F34E-48A6-9EC0-FA72565885E1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FC26912D-F34E-48A6-9EC0-FA72565885E1}.Debug|x86.Build.0 = Debug|Any CPU
+		{FC26912D-F34E-48A6-9EC0-FA72565885E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC26912D-F34E-48A6-9EC0-FA72565885E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC26912D-F34E-48A6-9EC0-FA72565885E1}.Release|x86.ActiveCfg = Release|Any CPU
+		{FC26912D-F34E-48A6-9EC0-FA72565885E1}.Release|x86.Build.0 = Release|Any CPU
+		{FB381ED1-7D48-4CAC-8B31-DACD6E02EF5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB381ED1-7D48-4CAC-8B31-DACD6E02EF5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB381ED1-7D48-4CAC-8B31-DACD6E02EF5F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FB381ED1-7D48-4CAC-8B31-DACD6E02EF5F}.Debug|x86.Build.0 = Debug|Any CPU
+		{FB381ED1-7D48-4CAC-8B31-DACD6E02EF5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB381ED1-7D48-4CAC-8B31-DACD6E02EF5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB381ED1-7D48-4CAC-8B31-DACD6E02EF5F}.Release|x86.ActiveCfg = Release|Any CPU
+		{FB381ED1-7D48-4CAC-8B31-DACD6E02EF5F}.Release|x86.Build.0 = Release|Any CPU
+		{F38A5A8E-CE82-4500-A8C8-DE2BEE909F00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F38A5A8E-CE82-4500-A8C8-DE2BEE909F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F38A5A8E-CE82-4500-A8C8-DE2BEE909F00}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F38A5A8E-CE82-4500-A8C8-DE2BEE909F00}.Debug|x86.Build.0 = Debug|Any CPU
+		{F38A5A8E-CE82-4500-A8C8-DE2BEE909F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F38A5A8E-CE82-4500-A8C8-DE2BEE909F00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F38A5A8E-CE82-4500-A8C8-DE2BEE909F00}.Release|x86.ActiveCfg = Release|Any CPU
+		{F38A5A8E-CE82-4500-A8C8-DE2BEE909F00}.Release|x86.Build.0 = Release|Any CPU
+		{9D7E1E9F-9CDE-44E5-A995-C21C66D24D5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D7E1E9F-9CDE-44E5-A995-C21C66D24D5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D7E1E9F-9CDE-44E5-A995-C21C66D24D5D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9D7E1E9F-9CDE-44E5-A995-C21C66D24D5D}.Debug|x86.Build.0 = Debug|Any CPU
+		{9D7E1E9F-9CDE-44E5-A995-C21C66D24D5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D7E1E9F-9CDE-44E5-A995-C21C66D24D5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D7E1E9F-9CDE-44E5-A995-C21C66D24D5D}.Release|x86.ActiveCfg = Release|Any CPU
+		{9D7E1E9F-9CDE-44E5-A995-C21C66D24D5D}.Release|x86.Build.0 = Release|Any CPU
+		{8EC806CD-E059-4F57-A536-C4E994F7F422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EC806CD-E059-4F57-A536-C4E994F7F422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EC806CD-E059-4F57-A536-C4E994F7F422}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8EC806CD-E059-4F57-A536-C4E994F7F422}.Debug|x86.Build.0 = Debug|Any CPU
+		{8EC806CD-E059-4F57-A536-C4E994F7F422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EC806CD-E059-4F57-A536-C4E994F7F422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EC806CD-E059-4F57-A536-C4E994F7F422}.Release|x86.ActiveCfg = Release|Any CPU
+		{8EC806CD-E059-4F57-A536-C4E994F7F422}.Release|x86.Build.0 = Release|Any CPU
+		{6AEDC97C-8B4C-42A6-9769-9F8CD96228C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AEDC97C-8B4C-42A6-9769-9F8CD96228C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AEDC97C-8B4C-42A6-9769-9F8CD96228C2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6AEDC97C-8B4C-42A6-9769-9F8CD96228C2}.Debug|x86.Build.0 = Debug|Any CPU
+		{6AEDC97C-8B4C-42A6-9769-9F8CD96228C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AEDC97C-8B4C-42A6-9769-9F8CD96228C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AEDC97C-8B4C-42A6-9769-9F8CD96228C2}.Release|x86.ActiveCfg = Release|Any CPU
+		{6AEDC97C-8B4C-42A6-9769-9F8CD96228C2}.Release|x86.Build.0 = Release|Any CPU
+		{221B0393-9AEB-4C80-BFAF-7132690070D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{221B0393-9AEB-4C80-BFAF-7132690070D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{221B0393-9AEB-4C80-BFAF-7132690070D8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{221B0393-9AEB-4C80-BFAF-7132690070D8}.Debug|x86.Build.0 = Debug|Any CPU
+		{221B0393-9AEB-4C80-BFAF-7132690070D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{221B0393-9AEB-4C80-BFAF-7132690070D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{221B0393-9AEB-4C80-BFAF-7132690070D8}.Release|x86.ActiveCfg = Release|Any CPU
+		{221B0393-9AEB-4C80-BFAF-7132690070D8}.Release|x86.Build.0 = Release|Any CPU
+		{283B6F1B-3949-4746-93A4-45ACB9E20B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{283B6F1B-3949-4746-93A4-45ACB9E20B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{283B6F1B-3949-4746-93A4-45ACB9E20B0B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{283B6F1B-3949-4746-93A4-45ACB9E20B0B}.Debug|x86.Build.0 = Debug|Any CPU
+		{283B6F1B-3949-4746-93A4-45ACB9E20B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{283B6F1B-3949-4746-93A4-45ACB9E20B0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{283B6F1B-3949-4746-93A4-45ACB9E20B0B}.Release|x86.ActiveCfg = Release|Any CPU
+		{283B6F1B-3949-4746-93A4-45ACB9E20B0B}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{04455861-70A1-40C5-8FDE-04A3BBB19DED} = {208A21F6-BEBC-4237-A876-BEDF4D890776}
+		{8D14580A-B045-4E68-B0E1-8802D1AA65C5} = {208A21F6-BEBC-4237-A876-BEDF4D890776}
+		{750F0EDC-1770-4353-86B8-2CC217CD0929} = {208A21F6-BEBC-4237-A876-BEDF4D890776}
+		{DB1EEB84-84C1-4202-97BE-05BC9F989ED8} = {208A21F6-BEBC-4237-A876-BEDF4D890776}
+		{452E29F9-CE04-4225-8EEE-1138372500BA} = {208A21F6-BEBC-4237-A876-BEDF4D890776}
+		{05F8149E-CA67-47FE-849D-7B80186EC1DE} = {C2647EF0-353F-4C0A-98F4-3AA629E321E5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8D910DB-C189-457C-82ED-BEDF123F5DB6}
+	EndGlobalSection
+EndGlobal
