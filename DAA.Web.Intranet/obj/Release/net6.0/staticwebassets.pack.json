@@ -1,0 +1,237 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\img\\DU.7454c5e9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\DU.7454c5e9.jpg"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\img\\ES.9541b2a4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\ES.9541b2a4.jpg"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\img\\logoDAA1.1c729d14.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logoDAA1.1c729d14.png"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\app.js",
+      "PackagePath": "staticwebassets\\assets\\js\\app.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\archivalEntities.js",
+      "PackagePath": "staticwebassets\\assets\\js\\archivalEntities.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\archives.js",
+      "PackagePath": "staticwebassets\\assets\\js\\archives.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\auth.js",
+      "PackagePath": "staticwebassets\\assets\\js\\auth.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\cards.js",
+      "PackagePath": "staticwebassets\\assets\\js\\cards.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\chunk-vendors.js",
+      "PackagePath": "staticwebassets\\assets\\js\\chunk-vendors.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\commission.js",
+      "PackagePath": "staticwebassets\\assets\\js\\commission.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\convertToPdf.js",
+      "PackagePath": "staticwebassets\\assets\\js\\convertToPdf.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\documents.js",
+      "PackagePath": "staticwebassets\\assets\\js\\documents.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\films.js",
+      "PackagePath": "staticwebassets\\assets\\js\\films.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\funds.js",
+      "PackagePath": "staticwebassets\\assets\\js\\funds.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\home.js",
+      "PackagePath": "staticwebassets\\assets\\js\\home.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\inventories.js",
+      "PackagePath": "staticwebassets\\assets\\js\\inventories.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\node_modules_vueform_multiselect_dist_multiselect_js-src_models_grid_ts.js",
+      "PackagePath": "staticwebassets\\assets\\js\\node_modules_vueform_multiselect_dist_multiselect_js-src_models_grid_ts.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\nomenclatures.js",
+      "PackagePath": "staticwebassets\\assets\\js\\nomenclatures.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\packageDocuments.js",
+      "PackagePath": "staticwebassets\\assets\\js\\packageDocuments.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\recordA.js",
+      "PackagePath": "staticwebassets\\assets\\js\\recordA.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\register.js",
+      "PackagePath": "staticwebassets\\assets\\js\\register.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_components_breadcrumbs_breadcrumbs_vue-src_components_grid_grid_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_components_breadcrumbs_breadcrumbs_vue-src_components_grid_grid_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_components_checkbox_checkboxlist_vue-src_components_field_textarea_field_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_components_checkbox_checkboxlist_vue-src_components_field_textarea_field_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_components_datetime_datepPicker_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_components_datetime_datepPicker_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_components_digitalObject_displayImageModal_vue-src_components_digitalObject_displayPdfMod-84873e.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_components_digitalObject_displayImageModal_vue-src_components_digitalObject_displayPdfMod-84873e.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_components_dropdown_dropdown_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_components_dropdown_dropdown_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_components_field_text_field_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_components_field_text_field_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_components_grid_pager_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_components_grid_pager_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_components_inventory_fundInventories_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_components_inventory_fundInventories_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_components_tinyMCE_tinyMCE_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_components_tinyMCE_tinyMCE_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_enums_inventory_ts-src_services_fund_service_ts-src_services_inventory_service_ts-src_com-dd2899.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_enums_inventory_ts-src_services_fund_service_ts-src_services_inventory_service_ts-src_com-dd2899.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_enums_nomenclature_ts-src_models_process_ts-src_components_films_assign_modal_vue-src_com-806048.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_enums_nomenclature_ts-src_models_process_ts-src_components_films_assign_modal_vue-src_com-806048.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_enums_process_ts-src_components_field_textarea_field_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_enums_process_ts-src_components_field_textarea_field_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_helpers_entityObject_helper_ts-src_models_fund_ts-src_components_eDocsCollection_processP-4b0335.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_helpers_entityObject_helper_ts-src_models_fund_ts-src_components_eDocsCollection_processP-4b0335.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_helpers_file_helper_ts-src_components_packageA_add_modal_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_helpers_file_helper_ts-src_components_packageA_add_modal_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_helpers_format_helper_ts-src_components_loader_loader_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_helpers_format_helper_ts-src_components_loader_loader_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_models_commission_ts-src_services_commissionDecision_service_ts-src_services_commissionRe-0fde69.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_models_commission_ts-src_services_commissionDecision_service_ts-src_services_commissionRe-0fde69.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_models_film_ts.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_models_film_ts.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_models_inventory_ts-src_components_packageA_packageA_inventory_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_models_inventory_ts-src_components_packageA_packageA_inventory_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_services_digitalObject_service_ts-src_components_reviews_publicUserReviews_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_services_digitalObject_service_ts-src_components_reviews_publicUserReviews_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_services_dropdown_service_ts.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_services_dropdown_service_ts.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_services_number_service_ts-node_modules_core-js_modules_es_error_cause_js-src_components_-435141.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_services_number_service_ts-node_modules_core-js_modules_es_error_cause_js-src_components_-435141.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_views_information_Display_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_views_information_Display_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_views_reports_Base_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_views_reports_Base_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_views_reports_Reports_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_views_reports_Reports_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_views_settings_InformationAdministration_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_views_settings_InformationAdministration_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\src_views_users_external_readers_Create_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_views_users_external_readers_Create_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\tasks.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tasks.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\users.js",
+      "PackagePath": "staticwebassets\\assets\\js\\users.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\assets\\js\\webfontloader.js",
+      "PackagePath": "staticwebassets\\assets\\js\\webfontloader.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\logoDAA1.ico",
+      "PackagePath": "staticwebassets\\logoDAA1.ico"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Intranet\\wwwroot\\robots.txt",
+      "PackagePath": "staticwebassets\\robots.txt"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.DAA.Web.Intranet.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.DAA.Web.Intranet.props",
+      "PackagePath": "build\\DAA.Web.Intranet.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.DAA.Web.Intranet.props",
+      "PackagePath": "buildMultiTargeting\\DAA.Web.Intranet.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.DAA.Web.Intranet.props",
+      "PackagePath": "buildTransitive\\DAA.Web.Intranet.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

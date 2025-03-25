@@ -1,0 +1,169 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\img\\DU.7454c5e9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\DU.7454c5e9.jpg"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\img\\ES.9541b2a4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\ES.9541b2a4.jpg"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\img\\logoDAA1.1c729d14.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logoDAA1.1c729d14.png"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\app.js",
+      "PackagePath": "staticwebassets\\assets\\js\\app.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\archivalEntities.js",
+      "PackagePath": "staticwebassets\\assets\\js\\archivalEntities.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\auth.js",
+      "PackagePath": "staticwebassets\\assets\\js\\auth.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\cards.js",
+      "PackagePath": "staticwebassets\\assets\\js\\cards.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\changePassword.js",
+      "PackagePath": "staticwebassets\\assets\\js\\changePassword.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\chunk-vendors.js",
+      "PackagePath": "staticwebassets\\assets\\js\\chunk-vendors.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\confirm.js",
+      "PackagePath": "staticwebassets\\assets\\js\\confirm.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\documents.js",
+      "PackagePath": "staticwebassets\\assets\\js\\documents.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\films.js",
+      "PackagePath": "staticwebassets\\assets\\js\\films.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\funds.js",
+      "PackagePath": "staticwebassets\\assets\\js\\funds.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\home.js",
+      "PackagePath": "staticwebassets\\assets\\js\\home.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\inventories.js",
+      "PackagePath": "staticwebassets\\assets\\js\\inventories.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\login.js",
+      "PackagePath": "staticwebassets\\assets\\js\\login.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\node_modules_core-js_modules_es_typed-array_at_js-node_modules_core-js_modules_es_typed-array-f25292.js",
+      "PackagePath": "staticwebassets\\assets\\js\\node_modules_core-js_modules_es_typed-array_at_js-node_modules_core-js_modules_es_typed-array-f25292.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\register.js",
+      "PackagePath": "staticwebassets\\assets\\js\\register.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\src_components_breadcrumbs_breadcrumbs_vue-src_components_checkbox_switch_vue-src_components_-3540f6.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_components_breadcrumbs_breadcrumbs_vue-src_components_checkbox_switch_vue-src_components_-3540f6.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\src_components_dropdown_dropdown_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_components_dropdown_dropdown_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\src_components_field_text_field_vue-src_components_grid_pager_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_components_field_text_field_vue-src_components_grid_pager_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\src_components_grid_grid_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_components_grid_grid_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\src_helpers_file_helper_ts-src_services_digitalObject_service_ts-src_components_digitalObject-815404.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_helpers_file_helper_ts-src_services_digitalObject_service_ts-src_components_digitalObject-815404.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\src_helpers_format_helper_ts.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_helpers_format_helper_ts.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\src_helpers_report_helper_ts-src_services_base_service_ts-src_components_datetime_datepPicker_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_helpers_report_helper_ts-src_services_base_service_ts-src_components_datetime_datepPicker_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\src_models_film_ts-src_services_filmCard_service_ts-src_components_films_buttons_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_models_film_ts-src_services_filmCard_service_ts-src_components_films_buttons_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\src_services_dropdown_service_ts.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_services_dropdown_service_ts.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\src_views_authentication_CertificateLoginResult_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_views_authentication_CertificateLoginResult_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\src_views_information_Display_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_views_information_Display_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\src_views_reports_Base_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_views_reports_Base_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\src_views_reports_Reports_vue.js",
+      "PackagePath": "staticwebassets\\assets\\js\\src_views_reports_Reports_vue.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\userprofile.js",
+      "PackagePath": "staticwebassets\\assets\\js\\userprofile.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\assets\\js\\webfontloader.js",
+      "PackagePath": "staticwebassets\\assets\\js\\webfontloader.js"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\logoDAA1.ico",
+      "PackagePath": "staticwebassets\\logoDAA1.ico"
+    },
+    {
+      "Id": "D:\\Work\\DAA\\DAA.Web.Public\\wwwroot\\robots.txt",
+      "PackagePath": "staticwebassets\\robots.txt"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.DAA.Web.Public.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.DAA.Web.Public.props",
+      "PackagePath": "build\\DAA.Web.Public.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.DAA.Web.Public.props",
+      "PackagePath": "buildMultiTargeting\\DAA.Web.Public.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.DAA.Web.Public.props",
+      "PackagePath": "buildTransitive\\DAA.Web.Public.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

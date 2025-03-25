@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Publish\DAAIntranet</_PublishTargetUrl>
+    <History>True|2022-10-31T11:06:49.5236927Z;False|2022-10-31T13:06:06.2087638+02:00;True|2022-10-31T11:31:58.8644704+02:00;True|2022-10-31T10:52:00.6626425+02:00;True|2022-09-29T14:21:12.3911139+03:00;True|2022-09-29T14:20:09.7482069+03:00;</History>
+  </PropertyGroup>
+</Project>
