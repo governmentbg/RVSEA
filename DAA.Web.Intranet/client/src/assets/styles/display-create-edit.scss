@@ -1,0 +1,69 @@
+@use "@/assets/styles/common.scss" as *;
+
+
+:deep(.loader) {
+    @include loader()
+}
+
+.v-card {
+    @include card;
+}
+
+.v-card-title, h3 {
+    @include title()
+}
+
+// :deep(button) {
+//     @include button();
+//     margin: 50px 15px 15px 15px;
+// }
+
+// :deep(button.cancel) {
+//     @include button($background: var(--ISDA-main-color1))
+// }
+
+// :deep(.v-expansion-panel-title) {
+//     @include button-expansion-panel($color: var(--ISDA-main-color1), $background: var(--ISDA-main-color2-1));
+//     top: 0px !important;
+//     margin-top: 0px !important;
+// }
+
+// :deep(.v-expansion-panels:first-of-type) {
+//     margin-bottom: 5px !important;
+// }
+
+.v-card:last-of-type {
+    @include card-last
+}
+
+// :deep(input[type="checkbox"]:checked),
+// :deep(.is-selected),
+// :deep(.multiselect-tag) {
+//     @include check-input()
+// }
+
+// :deep(.v-col header > div) {
+//     margin-bottom: 25px;
+// }
+
+// :deep(button) {
+//     margin-top: 15px !important;
+// }
+
+// :deep(button:disabled) {
+//     color: var(--ISDA-main-color1) !important;
+// }
+
+.v-card:nth-of-type(2) {
+    @include card-first
+}
+
+:deep(.icon-btn) {
+    background-color: white !important;
+    color: var(--ISDA-main-color1) !important;
+    box-shadow: none !important;
+}
+
+:deep(.icon-btn:hover) {
+    color: var(--ISDA-main-color4) !important;
+}

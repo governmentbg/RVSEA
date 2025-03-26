@@ -1,0 +1,16 @@
+export default {
+    addTemplate: 'Add template',
+    createTitle: 'New template',
+    deleteConfirmMessage: 'Delete template "{0}"',
+    description: 'Description',
+    file: 'File',
+    mainTitle: 'Templates for package A',
+    noTemplates: 'No added templates',
+    notRequired: 'Not required',
+    process: 'Process',
+    required: 'Required',
+    requiredField: 'Field {label} is required ',
+    skipValidation: 'Upload file without validation',
+    title: 'Title',
+    updateTitle: 'Edit template',
+};

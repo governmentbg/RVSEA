@@ -1,0 +1,52 @@
+@mixin button($color: white, $background: var(--ISDA-main-color4)) {
+    color: $color !important;
+    background-color: $background;
+    border: none;
+    border-radius: 6px;
+    box-shadow: gray 0px 1px 3px 0px;
+    height: 40px !important;
+}
+
+@mixin button-expansion-panel($color: var(--ISDA-main-color1), $background: var(--ISDA-main-color2)) {
+    color: $color !important;
+    background-color: $background;
+    margin: 0px;
+    box-shadow: none;
+}
+
+@mixin loader($color: var(--ISDA-main-color4)) {
+    border-top: 2px solid $color;
+    border-right: 2px solid $color;
+}
+
+@mixin title($color: var(--ISDA-main-color1), $background: var(--ISDA-main-color2)) {
+    padding: 5px 10px;
+    color: $color;
+    border-bottom: 1px solid $color;
+    box-shadow: rgb(173, 173, 173) 0px 1px 1px 0px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+@mixin card($color: var(--ISDA-main-color1)) {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    color: $color;
+}
+
+@mixin check-input($color: var(--ISDA-main-color4)) {
+    background-color: $color !important;
+    border: none;
+}
+
+@mixin item-hover($color: var(--ISDA-main-color4)) {
+    color: $color;
+}
+
+@mixin side-margin($m: 30px) {
+    margin: 0px $m;
+}
+
+@mixin card-first {
+    margin-top: 50px !important;
+}

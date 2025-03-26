@@ -1,0 +1,59 @@
+export interface IDigitalObject {
+    id?: number,
+    systemIdentifier?: string,
+    isDraft?: boolean,
+    archiveId?: number,
+    archiveCode?: number,
+    archiveName?: string,
+    fundDraftId?: number,
+    fundSystemIdentifier?: string,
+    fundExternalIdentifier?: number,
+    fundHasExternalSource?: boolean,
+    fundNumber?: string,
+    inventoryDraftId?: number,
+    inventorySystemIdentifier?: string,
+    inventoryExternalIdentifier?: number,
+    inventoryHasExternalSource?: boolean,
+    inventoryNumber?: string,
+    archivalEntityDraftId?: number,
+    archivalEntitySystemIdentifier?: string,
+    archivalEntityExternalIdentifier?: number,
+    archivalEntityHasExternalSource?: boolean,
+    archivalEntityNumber?: string,
+    documentDraftId?: number,
+    documentSystemIdentifier?: string,
+    documentExternalIdentifier?: number,
+    documentHasExternalSource?: boolean,
+    documentNumber?: string,
+    externalIdentifier?: number,
+    hasExternalSource?: boolean,
+    externalSourceUpdatedOn?: Date,
+    parentId?: number,
+    parentSystemIdentifier?: string,
+    typeCode?: number,
+    name?: string,
+    sourceName?: string,
+    uncPath?: string,
+    fileType?: string,
+    contentType?: string,
+    statusCode?: string,
+    statusText?: string,
+    content?: File,
+    watermarkName?: string;
+    watermarkUncPath?: string;
+    hashCode?: string;
+    skipValidation?: boolean;
+    isDigitized?: boolean;
+    isImported?: boolean;
+}
+
+export interface IDigitalObjectDraft extends IDigitalObject {
+    isCurrent?: boolean,
+    readOnly?: boolean,
+    workflowTypeCode?: string,
+    workflowTypeText?: string,
+    workflowId?: number,
+    workflowStepTypeCode?: string
+    workflowStepTypeText?: string
+    workflowStepId?: number,
+}

@@ -1,0 +1,18 @@
+export default {
+    advancedSearch: 'Advanced search',
+    archivalEntityNumber: 'Archival entity number',
+    countryOfOrigin: 'Country of origin',
+    cmfNumber: 'CMF number',
+    dateFrom: 'Date from',
+    dateTo: 'Date to',
+    descLevel: 'Level of description',
+    fileContentSearch: "Search file content",
+    foreignarchives: 'Searches only for copies of foreign records',
+    fundArray: 'Fund array',
+    fundNumber: 'Fund number',
+    inventoryyNumber: 'Inventory number',
+    keyWords: 'Key words',
+    name: "Title/Changes of creator's name",
+    searchByDigitalCopies: 'Search by digital copies',
+    timeout: 'Searching with these filters would take too much time. Choose more concrete ones and try again.',
+};

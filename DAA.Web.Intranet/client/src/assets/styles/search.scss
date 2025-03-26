@@ -1,0 +1,41 @@
+@use "@/assets/styles/common.scss" as *;
+@use "@/assets/styles/index.scss" as *;
+
+
+:deep(.loader) {
+    @include loader()
+}
+
+.v-card {
+    @include card;
+    background-color: 'secondary-lighten-1';
+}
+
+.v-card-title {
+    @include title();
+    //border-radius: 6px;
+    font-size: 24px;
+    box-shadow: none;
+}
+
+// :deep(button) {
+//     @include button();
+//     margin: 50px 15px 15px 15px;
+// }
+
+// :deep(button.cancel) {
+//     @include button($background: var(--ISDA-main-color1))
+// }
+
+:deep(.btns) {
+    float: right;
+}
+
+// :deep(.v-expansion-panel-title) {
+//     @include button-expansion-panel($color: var(--ISDA-main-color1), $background: var(--ISDA-main-color2-1))
+// }
+
+:deep(input[type="checkbox"]:checked),
+:deep(.is-selected) {
+    @include check-input()
+}

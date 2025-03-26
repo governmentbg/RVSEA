@@ -1,0 +1,18 @@
+export default {
+    addTemplate: 'Добави шаблон',
+    createTitle: 'Нов шаблон',
+    deleteConfirmMessage: 'Изтриване на шаблон "{0}"',
+    description: 'Описание',
+    file: 'Документ',
+    mainTitle: 'Шаблони за пакет А',
+    noTemplates: 'Няма добавени шаблони',
+    notRequired: 'Не задължително',
+    process: 'Процес',
+    required: 'Задължително',
+    requiredField: 'Полето {label} e задължително ',
+    skipValidation: 'Качи файл без валидация',
+    title: 'Наименование',
+    updateTitle: 'Промяна на шаблон',
+    attachMultipleFiles: 'Повече от един файл',
+    attachSignatureFile: 'Добави подписан документ',
+};

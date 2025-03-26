@@ -1,0 +1,21 @@
+﻿namespace DAA.Models.Reports
+{
+    public class ListOfPartialReceiptsInArchiveReportInputModel
+    {
+        public int? ReportResultType { get; set; }
+        public IList<string>? Archives { get; set; }
+        public IList<string>? PeriodGids { get; set; }
+        public IList<string>? FundArraysInternal { get; set; }
+        public IList<string>? Statuses { get; set; }
+        // махат се по забележка от ИСДА
+        //public IList<string>? FundTypeGids { get; set; }
+        //public IList<string>? FundTypesInternal { get; set; }
+        public IList<string>? MethodOfAcquisitionGids { get; set; }
+        public IList<string>? MethodsOfAcquisitionInternal { get; set; }
+        public DateTime? RegisteredFrom { get; set; }
+        public DateTime? RegisteredTo { get; set; }
+        public string? ChronologicalScope { get; set; }
+        public string? ChronologicalScopeStartDate { get; set; }
+        public string? ChronologicalScopeEndDate { get; set; }
+    }
+}

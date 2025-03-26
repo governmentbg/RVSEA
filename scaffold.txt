@@ -1,0 +1,5 @@
+Scaffold-DBContext -Connection name="DefaultConnection" Microsoft.EntityFrameworkCore.SqlServer -Context ArchivingContext -force -Project DAA.Data
+Scaffold-DBContext -Connection name="BufferFilesConnection" Microsoft.EntityFrameworkCore.SqlServer -Context BufferFileContext -force -Project DAA.Data.Files
+Scaffold-DBContext -Connection name="AdjunctFilesConnection" Microsoft.EntityFrameworkCore.SqlServer -Context AdjunctFileContext -force -Project DAA.Data.Files
+Scaffold-DBContext -Connection name="MasterFilesConnection" Microsoft.EntityFrameworkCore.SqlServer -Context MasterFileContext -force -Project DAA.Data.Files
+Scaffold-DBContext -Connection name="FilesConnection" Microsoft.EntityFrameworkCore.SqlServer -Context FileContext -force -Project DAA.Data.Files

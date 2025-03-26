@@ -1,0 +1,19 @@
+:deep(div:has(.v-breadcrumbs)),
+:deep(.v-breadcrumbs) {
+    position: fixed !important;
+    z-index: 5;
+    top: 60px !important;
+    width: 98.5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid var(--ISDA-main-ae-color);
+    height: 50px;
+    padding-top: 20px;
+}
+
+:deep(.v-breadcrumbs-item--disabled) {
+    padding: 5px 8px;
+    border-radius: 10px;
+    background-color: var(--ISDA-main-ae-color-light) !important;
+    color: var(--ISDA-main-ae-color) !important;
+    opacity: 0.8;
+}

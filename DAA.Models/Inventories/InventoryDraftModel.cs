@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DAA.Models.Inventories
+{
+    public class InventoryDraftModel : InventoryModel
+    {
+        public bool IsCurrent { get; set; }
+        public bool ReadOnly { get; set; }
+        public string? WorkflowTypeCode { get; set; }
+        public int? WorkflowId { get; set; }
+        public string? WorkflowStepTypeCode { get; set; }
+        public int? WorkflowStepId { get; set; }
+    }
+
+    public class InventoryDraftCreateModel : InventoryDraftModel
+    {
+        public bool StartProcess { get; set; }
+    }
+}

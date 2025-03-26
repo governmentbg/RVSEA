@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AcquisitionMethod.cs" />
+    <Compile Remove="ArchivalEntityStatus.cs" />
+    <Compile Remove="ArchivingContextConnection.cs" />
+    <Compile Remove="ArchivingContextExtension.cs" />
+    <Compile Remove="EntityDescriptionLevel.cs" />
+    <Compile Remove="Epkmeeting.cs" />
+    <Compile Remove="FundStatus.cs" />
+    <Compile Remove="InventoryStatus.cs" />
+    <Compile Remove="RemoteDBEntities\FundAsLocalEntity.cs" />
+    <Compile Remove="RemoteDBEntities\InventoryAsLocalEntity.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.9" />
+    <PackageReference Include="Z.EntityFramework.Plus.EFCore" Version="6.18.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DAA.Shared\DAA.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

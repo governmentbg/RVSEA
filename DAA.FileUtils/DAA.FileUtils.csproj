@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ImageUtil.cs" />
+    <Compile Remove="SgmlReader\Main.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Images\DAA-logo.png" />
+    <None Remove="SgmlReader\Html.dtd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\DAA-logo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SgmlReader\Html.dtd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="ImageUtil.cs" />
+    <None Include="SgmlReader\Main.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Codeuctivity.PdfAValidator" Version="2.3.104" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.19.0" />
+    <PackageReference Include="MetadataExtractor" Version="2.7.2" />
+    <PackageReference Include="MVsDotNetAMSIClient" Version="1.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DAA.Extensions\DAA.Extensions.csproj" />
+    <ProjectReference Include="..\DAA.Models\DAA.Models.csproj" />
+  </ItemGroup>
+
+</Project>

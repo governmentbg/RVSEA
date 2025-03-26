@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Grid\**" />
+    <EmbeddedResource Remove="Grid\**" />
+    <None Remove="Grid\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="ArchiveEntities\ArchiveEntityCreateModel.cs" />
+    <Compile Remove="ArchiveEntities\ArchiveEntityDisplayModel.cs" />
+    <Compile Remove="ArchiveEntities\ArchiveEntityOfListDisplayModel.cs" />
+    <Compile Remove="ArchiveEntities\ArchiveEntityUpdateModel.cs" />
+    <Compile Remove="DigitalObjects\DigitalObjectPublicModel.cs" />
+    <Compile Remove="Documents\DocumentsProcedure\DocProcCommentBaseModel.cs" />
+    <Compile Remove="Documents\DocumentsProcedure\DocProcCommentCreateModel.cs" />
+    <Compile Remove="Documents\DocumentsProcedure\DocProcCommentViewModel.cs" />
+    <Compile Remove="Funds\SearchedFundDisplayModel.cs" />
+    <Compile Remove="Funds\SearchedFundShortDisplayModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Grid\GridColumnExportModel.cs" />
+    <Compile Include="Grid\GridColumnModel.cs" />
+    <Compile Include="Grid\GridSettingsModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="6.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DAA.Data\DAA.Data.csproj" />
+    <ProjectReference Include="..\DAA.Shared\DAA.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Roles\" />
+  </ItemGroup>
+
+</Project>

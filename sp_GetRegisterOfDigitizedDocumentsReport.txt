@@ -1,0 +1,182 @@
+USE [DAA]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_GetRegisterOfDigitizedDocumentsReport]    Script Date: 28.9.2022 г. 16:10:49 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER PROCEDURE [dbo].[sp_GetRegisterOfDigitizedDocumentsReport]
+	@LinkedServer nvarchar(50),
+	@ResultType int, -- 1 - вземи всичко; 2 - вземи от ИСДА само; 3 - вземи от локалната база само
+	@RowsOfPage int = 5000,
+	@Page int = 1,
+	@ArchiveGids nvarchar(max) = null,
+	@ArchiveCodesInternal nvarchar(max) = null
+
+AS
+BEGIN
+
+	SET NOCOUNT ON;
+
+	DECLARE @offset INT = (@Page - 1) * @RowsOfPage; --От кой до кой резултат да се вземат за съответната страница
+
+	DECLARE @sql VARCHAR(MAX); --Контейнер за побиране на сглобената заявка
+	DECLARE @sqlFinalPart VARCHAR(MAX) = '
+		order by SystemId desc
+		offset ' + CONVERT(varchar(10), @offset) + ' rows fetch next ' + CONVERT(varchar(10), @RowsOfPage) + ' rows only'; -- Независимо от източника на резултата, той се форматира по този начин
+
+	IF @ResultType = 2 OR @ResultType = 1
+	BEGIN
+		DECLARE @remoteQuery VARCHAR(MAX) = '
+		SELECT 
+			''Link_todo'' as DocumentLink,
+			(select CAST(a.Code as nvarchar(10)) from archive as a where _retired = ''3000-01-01'' and Gid = d.ArchiveGid) as ArchiveCode,
+			(select a.Name from archive as a where _retired = ''3000-01-01'' and Gid = d.ArchiveGid) as ArchiveName,
+			CAST(d.Gid as nvarchar(256)) as SystemId,
+			(select n.Value FROM Nomenclature as n where _retired = ''3000-01-01'' and Gid = (SELECT LevelOfDescriptionGid from Fund_Modified f where f.LGid = d.FundLGid)) as LevelOfDescription,
+			(select top 1 Number from Fund_Modified f where f.LGid = d.FundLGid) as FundNumber,
+			(select i.Number from Inventory_Modified as i where i.LGid = d.InventoryLGid) as InventoryNumber,
+			(select ae.Number from ArchiveEntity_Modified as ae where ae.LGid = d.AELGid) as ArchiveEntityNumber,
+			CAST(d.Title as nvarchar(256)) as Title,
+			CAST(convert(varchar, d.DOCreationDate, 104) as nvarchar(50)) as DocCreationDate,
+			(select n.Value + '', ''
+				from Nomenclature n
+				inner join ObjectNomenclature objn on n.Gid = objn.NomenclatureGid and objn._retired = ''3000-01-01'' and objn.DocumentGid = d.Gid
+				where 
+				n._retired = ''3000-01-01''
+				and n.[Type] = ''Annotated''
+				FOR XML path(''''), elements) as Themes,
+			(select n.Value FROM Nomenclature as n where _retired = ''3000-01-01'' and Gid = d.StatusGid) as DocStatus,
+			CAST((select top(1) img.CreatedOn from Image as img where d.Gid = img.DocumentGid and img._retired = ''3000-01-01'') as nvarchar(50)) as CreationDateDO,
+			COUNT(img.Gid) as RecordsCountDO,
+			NULL as Duration,
+			CAST((
+				select convert(varchar, max(p.ModifiedOn), 104)  
+				from Document doc
+				inner join Process p on p._retired = ''3000-01-01'' and p.Gid = doc.ProcessGid and p.TypeGid = 2124 and p.StepGid = 75
+				where doc.LGid = d.lgid
+			) as nvarchar(50)) as DigitalObjectRecreationDate,
+			CAST((SUM(isnull(img.ByteLenght, 0))*0.000001) as nvarchar(256)) as MbDO,
+			case when isnull(d.DigitalObjectDeleted, 0) = 0 then ''Активен'' else ''Заличен'' end as StatusDO,
+			d.DOCreationAuthor as Operator,
+			NULL as CorrectionReturnDate,
+			NULL as FinalCorrectionDate,
+			CAST((
+				select convert(varchar, max(p.ModifiedOn), 104)  
+				from Document doc
+				inner join Process p on p._retired = ''3000-01-01'' and p.Gid = doc.ProcessGid and p.TypeGid = 2123 and p.StepGid = 75
+				where doc.LGid = d.lgid
+			) as nvarchar(50)) as DigitalObjectAcceptanceDate
+		FROM Document_Modified as d
+		LEFT OUTER JOIN [Image] img on d.Gid = img.DocumentGid and img._retired = ''3000-01-01''
+		WHERE ISNULL(d.HasDigitalObject, 0) = 1
+			  AND ((''-999'' in (select element from dbo.SplitString(''' + @ArchiveGids + ''', '',''))) OR d.ArchiveGid in  (select element from dbo.SplitString(''' + @ArchiveGids + ''', '','')))
+		GROUP BY
+			d.LGid, 
+			d.ArchiveGid, 
+			d.CreationDate, 
+			d.Title, 
+			d.StatusGid, 
+			d.DigitalObjectDeleted, 
+			d.DigitalObjectDeleted, 
+			d.DOCreationDate, 
+			d.FundLGid, 
+			d.InventoryLGid, 
+			d.AELGid, 
+			d.Gid,
+			d.StartDateDay,
+			d.StartDateMonth,
+			d.StartDateYear,
+			d.EndDateDay,
+			d.EndDateMonth,
+			d.EndDateYear,
+			d.TextDate,
+			d.DOCreationAuthor'
+			  
+		SET @remoteQuery = REPLACE(@remoteQuery, '''', '''''');
+	END
+
+	IF @ResultType = 3 OR @ResultType = 1
+	BEGIN
+		DECLARE @localQuery VARCHAR(MAX) = '
+		SELECT 
+			''Link_todo'' as DocumentLink,
+			CAST((select a.Code FROM [Archives] as a where a.Id = ArchiveId) as nvarchar(256)) as ArchiveCode,
+			(select a.Name FROM [Archives] as a where a.Id = d.ArchiveId) as ArchiveName,
+			CAST(d.SystemIdentifier as nvarchar(256)) as SystemId,
+			(select fdl.Text FROM [N].[FundDescriptionLevel] as fdl where fdl.Code = (select f.DescriptionLevelCode FROM Funds f where f.SystemIdentifier = d.FundSystemIdentifier)) as LevelOfDescription,
+			CAST((select f.Number FROM Funds as f where f.SystemIdentifier = d.FundSystemIdentifier) as nvarchar(256)) as FundNumber,
+			CAST((select i.Number FROM Inventories as i where i.SystemIdentifier = d.InventorySystemIdentifier) as nvarchar(256)) as InventoryNumber,
+			CAST((select ae.Number FROM ArchivalEntities as ae where ae.SystemIdentifier = d.ArchivalEntitySystemIdentifier) as nvarchar(256)) as ArchiveEntityNumber,
+			CAST(d.Title as nvarchar(256)) as Title,
+			CAST(d.CreatedOn as nvarchar(50)) as DocCreationDate,
+			NULL as Themes,
+			(select n.Text from N.Nomenclatures as n where n.Id = d.StatusCode and n.Deleted = 0) as DocStatus,
+			CAST((select do.CreatedOn from DigitalObjects as do where do.DocumentSystemIdentifier = d.SystemIdentifier) as nvarchar(50)) as CreationDateDO,
+			d.DigitizedCopyCount as RecordsCountDO,
+			CAST(d.Duration as nvarchar(256)) as Duration,
+			NULL as DigitalObjectRecreationDate,
+			CAST(isnull(d.Bytes, 0)*0.000001 as nvarchar(256)) as MbDO,
+			(select n.Text from N.Nomenclatures as n join DigitalObjects as do on n.Id = do.StatusCode where do.DocumentSystemIdentifier = d.SystemIdentifier and n.Deleted = 0) as StatusDO,
+			NULL as Operator,
+			NULL as CorrectionReturnDate,
+			NULL as FinalCorrectionDate,
+			NULL as DigitalObjectAcceptanceDate
+		FROM Documents as d
+		WHERE ExternalIdentifier IS NULL AND HasExternalSource = 0 AND Deleted = 0 
+			  AND exists(select 1 from DocumentDigitalObjects do where d.Id = do.DocumentId)
+			  AND ((''-999'' in (select element from dbo.SplitString(''' + @ArchiveCodesInternal  + ''', '',''))) 
+			  OR ((select convert(varchar(4), Code, 104) from Archives a where a.Id = ArchiveId and a.deleted = 0) in (select element from dbo.SplitString(''' + @ArchiveCodesInternal + ''', '',''))))'
+
+	END
+
+	IF @ResultType = 1
+	BEGIN
+		SET @sql = '
+			DECLARE @remoteDigitizedDocumentsTable TABLE (
+				DocumentLink nvarchar(MAX) NULL,
+				ArchiveCode nvarchar(256) NOT NULL,
+				ArchiveName nvarchar(256) NOT NULL,
+				SystemId nvarchar(256) NULL,
+				LevelOfDescription nvarchar(MAX) NULL,
+				FundNumber nvarchar(256) NULL,
+				InventoryNumber nvarchar(256) NULL,
+				ArchiveEntityNumber nvarchar(256) NULL,
+				Title nvarchar(256) NULL,
+				DocCreationDate nvarchar(50) NULL,
+				Themes nvarchar(MAX) NULL,
+				DocStatus nvarchar(MAX) NULL,
+				CreationDateDO nvarchar(50) NULL,
+				RecordsCountDO int NULL,
+				Duration nvarchar(256) NULL,
+				DigitalObjectRecreationDate nvarchar(50) NULL,
+				MbDO nvarchar(256) NULL,
+				StatusDO nvarchar(MAX) NULL,
+				Operator nvarchar(MAX) NULL,
+				CorrectionReturnDate nvarchar(50) NULL,
+				FinalCorrectionDate nvarchar(50) NULL,
+				DigitalObjectAcceptanceDate nvarchar(50) NULL
+			);
+
+			INSERT INTO @remoteDigitizedDocumentsTable SELECT * FROM openquery(' + @LinkedServer + ', ''' + @remoteQuery +''');' + 
+
+			'SELECT * FROM @remoteDigitizedDocumentsTable
+			UNION
+			' +
+			@localQuery + @sqlFinalPart;	
+	END
+
+	IF @ResultType = 2
+	BEGIN
+		SET @sql = 'SELECT * FROM openquery(' + @LinkedServer + ', ''' + @remoteQuery + @sqlFinalPart +''');';
+	END
+
+	IF @ResultType = 3
+	BEGIN
+		SET @sql = @localQuery + @sqlFinalPart;
+	END
+
+	--print @sql;
+	EXEC (@sql);
+END
